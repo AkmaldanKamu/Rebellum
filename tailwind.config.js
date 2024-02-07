@@ -1,17 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: ["./src/**/*.{html,js}", "./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
     container: {
       center: true,
       padding: "16px"
     },
     extend: {
-      screens: {
-        '2xl': '1320px'
+      colors: {
+        primary: {
+          100: "#5562AD",
+          200: "#6171C8"
+        }
+      },
+      fontFamily: {
+        poppins: ["poppins", "sans-serif"],
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+]
 }
 

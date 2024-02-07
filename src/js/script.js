@@ -1,5 +1,6 @@
 import 'flowbite';
 import { Accordion } from 'flowbite';
+import './accordion';
 
 const accordionItems = document.querySelectorAll('.accordion-item');
   

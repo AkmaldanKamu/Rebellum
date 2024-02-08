@@ -1,0 +1,75 @@
+    <header
+      class="absolute left-0 top-0 z-50 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a
+              href="#home"
+              class="block py-6 font-poppins text-2xl font-bold tracking-wide text-primary-100 lg:text-3xl"
+              >Ramarfx</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="navMenu"
+              class="bg-dark shadow-lightDark-100 absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg py-5 shadow-sm lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-5 flex rounded-full bg-primary-100 px-6 py-2 font-poppins text-base font-bold text-white"
+                    >Quote</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>

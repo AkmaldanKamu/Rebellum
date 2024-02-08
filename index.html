@@ -8,88 +8,172 @@
   </head>
   <body>
     <!-- navbar section start-->
-    <header
-      class="absolute left-0 top-0 z-50 flex w-full items-center bg-transparent"
-    >
-      <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="px-4">
-            <a
-              href="#home"
-              class="block py-6 font-poppins text-2xl font-bold tracking-wide text-primary-100 lg:text-3xl"
-              >Ramarfx</a
+    <header>
+      <nav
+        class="fixed left-0 top-0 w-full border-gray-200 bg-white bg-opacity-70"
+      >
+        <div
+          class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+              >Flowbite</span
             >
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              class="absolute right-4 block lg:hidden"
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-5 w-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
             >
-              <span
-                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
-              ></span>
-            </button>
-
-            <nav
-              id="navMenu"
-              class="bg-dark shadow-lightDark-100 absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg py-5 shadow-sm lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="mt-4 flex flex-col items-center rounded-lg border border-gray-100 bg-white p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
             >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
-                    >Beranda</a
+              <li>
+                <a
+                  href="#"
+                  class="block rounded bg-blue-700 px-3 py-2 text-white dark:bg-blue-600 md:bg-transparent md:p-0 md:text-blue-700 md:dark:bg-transparent md:dark:text-blue-500"
+                  aria-current="page"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex w-full items-center justify-between rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:text-white md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                >
+                  Dropdown
+                  <svg
+                    class="ms-2.5 h-2.5 w-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
                   >
-                </li>
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
-                    >Beranda</a
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow dark:divide-gray-600 dark:bg-gray-700"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
                   >
-                </li>
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
-                    >Beranda</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-5 flex py-2 font-poppins text-base font-bold group-hover:text-primary-100"
-                    >Beranda</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-5 flex rounded-full bg-primary-100 px-6 py-2 font-poppins text-base font-bold text-white"
-                    >Quote</a
-                  >
-                </li>
-              </ul>
-            </nav>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >Kasus</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >Penyebab & Solusi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >Data</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block rounded rounded-l-full rounded-r-full bg-primary-100 px-5 py-2 text-white hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Quote</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!-- navbar section end -->
 
     <!-- hero section start -->
     <section id="jumbotron" class="pt-36">
       <div class="container">
-        <div class="flex w-full flex-wrap items-center justify-between">
-          <div class="w-1/2 px-4">
+        <div
+          class="flex w-full flex-col-reverse flex-wrap items-center justify-between gap-10 md:flex-row md:gap-0"
+        >
+          <div class="w-full px-4 md:w-1/2">
             <h1 class="font-poppins text-2xl font-bold">
               Bagaimana Kasus Kenakalan Remaja di Indonesia?
             </h1>
@@ -314,16 +398,18 @@
     <!-- rebellium section start -->
     <section id="rebellium" class="pb-24 pt-16">
       <div class="container">
-        <div class="flex flex-wrap items-center justify-between">
-          <div>
-            <div class="bg-secondary-100 h-[476px] w-[551px]"></div>
+        <div
+          class="flex flex-col-reverse flex-wrap items-center justify-between gap-10 md:flex-row md:gap-10"
+        >
+          <div class="w-full md:w-auto">
+            <div class="h-[476px] w-full bg-secondary-100 md:w-[500px]"></div>
           </div>
-          <div class="w-1/2">
+          <div class="w-full md:w-1/2">
             <h1 class="mb-8 text-5xl font-semibold">
               Apa itu <span class="text-yellow">Rebellium?</span>
             </h1>
 
-            <p class="md: text-secondary-200 text-base md:max-w-2xl">
+            <p class="md: text-base text-secondary-200 md:max-w-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -492,18 +578,19 @@
         src="./src/assets/wave-triangle.png"
         alt=""
         class="m-auto -mt-1 flex h-auto w-full"
+        style="-webkit-user-drag: none"
       />
     </section>
     <!-- carousel section end -->
 
     <!-- pengaruh section start -->
-    <section id="pengaruh" class="pb-32">
+    <section id="pengaruh" class="">
       <div class="container">
         <h1 class="text-center text-4xl font-semibold">
           Pengaruh dari <span class="text-yellow">Kenakalan Remaja</span>
         </h1>
         <p
-          class="text-secondary-200 mx-auto mt-5 text-center text-base md:max-w-2xl"
+          class="mx-auto mt-5 text-center text-base text-secondary-200 md:max-w-2xl"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -511,10 +598,12 @@
           aliquip.
         </p>
 
-        <div class="flex flex-wrap justify-evenly">
+        <div class="mt-8 flex flex-wrap justify-evenly gap-10">
           <!-- card 1 -->
-          <div class="w-96 rounded-lg px-5 py-5 shadow-md">
-            <h2 class="mb-5 text-center text-2xl">
+          <div
+            class="w-full rounded-lg border px-5 py-5 shadow-lg md:w-[400px]"
+          >
+            <h2 class="mb-5 text-center text-2xl font-semibold">
               Penyebab dari Kenakalan Remaja
             </h2>
 
@@ -522,12 +611,11 @@
               <h2 id="accordion-collapse-heading-11">
                 <button
                   type="button"
-                  class="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
+                  class="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
                   data-accordion-target="#accordion-collapse-body-11"
-                  aria-expanded="true"
                   aria-controls="accordion-collapse-body-1"
                 >
-                  <span>What is Flowbite?</span>
+                  <span>Perilaku Buruk (Tawuran)</span>
                   <svg
                     data-accordion-icon
                     class="h-3 w-3 shrink-0 rotate-180"
@@ -579,7 +667,7 @@
                   aria-expanded="false"
                   aria-controls="accordion-collapse-body-2"
                 >
-                  <span>Is there a Figma file available?</span>
+                  <span>Perilaku Buruk (Narkoba)</span>
                   <svg
                     data-accordion-icon
                     class="h-3 w-3 shrink-0 rotate-180"
@@ -631,10 +719,7 @@
                   aria-expanded="false"
                   aria-controls="accordion-collapse-body-3"
                 >
-                  <span
-                    >What are the differences between Flowbite and Tailwind
-                    UI?</span
-                  >
+                  <span>Perilaku Buruk (Merokok)</span>
                   <svg
                     data-accordion-icon
                     class="h-3 w-3 shrink-0 rotate-180"
@@ -695,12 +780,221 @@
                   </ul>
                 </div>
               </div>
+              <h2 id="accordion-collapse-heading-14">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
+                  data-accordion-target="#accordion-collapse-body-14"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span>Perilaku Buruk (Seksual)</span>
+                  <svg
+                    data-accordion-icon
+                    class="h-3 w-3 shrink-0 rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-14"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-3"
+              >
+                <div
+                  class="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from
+                    Flowbite are open source under the MIT license, whereas
+                    Tailwind UI is a paid product. Another difference is that
+                    Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    However, we actually recommend using both Flowbite, Flowbite
+                    Pro, and even Tailwind UI as there is no technical reason
+                    stopping you from using the best of two worlds.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Learn more about these technologies:
+                  </p>
+                  <ul class="list-disc ps-5 text-gray-500 dark:text-gray-400">
+                    <li>
+                      <a
+                        href="https://flowbite.com/pro/"
+                        class="text-blue-600 hover:underline dark:text-blue-500"
+                        >Flowbite Pro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://tailwindui.com/"
+                        rel="nofollow"
+                        class="text-blue-600 hover:underline dark:text-blue-500"
+                        >Tailwind UI</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h2 id="accordion-collapse-heading-15">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
+                  data-accordion-target="#accordion-collapse-body-15"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span>Perilaku Buruk (Perundungan)</span>
+                  <svg
+                    data-accordion-icon
+                    class="h-3 w-3 shrink-0 rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-15"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-3"
+              >
+                <div
+                  class="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from
+                    Flowbite are open source under the MIT license, whereas
+                    Tailwind UI is a paid product. Another difference is that
+                    Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    However, we actually recommend using both Flowbite, Flowbite
+                    Pro, and even Tailwind UI as there is no technical reason
+                    stopping you from using the best of two worlds.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Learn more about these technologies:
+                  </p>
+                  <ul class="list-disc ps-5 text-gray-500 dark:text-gray-400">
+                    <li>
+                      <a
+                        href="https://flowbite.com/pro/"
+                        class="text-blue-600 hover:underline dark:text-blue-500"
+                        >Flowbite Pro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://tailwindui.com/"
+                        rel="nofollow"
+                        class="text-blue-600 hover:underline dark:text-blue-500"
+                        >Tailwind UI</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h2 id="accordion-collapse-heading-16">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
+                  data-accordion-target="#accordion-collapse-body-16"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span>Perilaku Buruk (Balap Liar)</span>
+                  <svg
+                    data-accordion-icon
+                    class="h-3 w-3 shrink-0 rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-16"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-3"
+              >
+                <div
+                  class="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from
+                    Flowbite are open source under the MIT license, whereas
+                    Tailwind UI is a paid product. Another difference is that
+                    Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    However, we actually recommend using both Flowbite, Flowbite
+                    Pro, and even Tailwind UI as there is no technical reason
+                    stopping you from using the best of two worlds.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Learn more about these technologies:
+                  </p>
+                  <ul class="list-disc ps-5 text-gray-500 dark:text-gray-400">
+                    <li>
+                      <a
+                        href="https://flowbite.com/pro/"
+                        class="text-blue-600 hover:underline dark:text-blue-500"
+                        >Flowbite Pro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://tailwindui.com/"
+                        rel="nofollow"
+                        class="text-blue-600 hover:underline dark:text-blue-500"
+                        >Tailwind UI</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="w-96 rounded-lg px-5 py-5 shadow-md">
-            <h2 class="mb-5 text-center text-2xl">
-              Penyebab dari Kenakalan monyet
+          <div
+            class="w-full rounded-lg border px-5 py-5 shadow-lg md:w-[400px]"
+          >
+            <h2 class="mb-5 text-center text-2xl font-semibold">
+              Solusi untuk Kenakalan Remaja
             </h2>
 
             <div id="accordion-collapse" data-accordion="collapse">
@@ -709,7 +1003,6 @@
                   type="button"
                   class="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 rtl:text-right"
                   data-accordion-target="#accordion-collapse-body-1"
-                  aria-expanded="true"
                   aria-controls="accordion-collapse-body-1"
                 >
                   <span>What is Flowbite?</span>
@@ -886,6 +1179,29 @@
       </div>
     </section>
     <!-- pengaruh section end -->
+
+    <section id="kumpulanData">
+      <img
+        src="./src/assets/city.svg"
+        alt=""
+        class="relative -z-10 -mt-5 w-full"
+      />
+      <div
+        class="z-20 -mt-10 h-96 w-full rounded-t-3xl bg-white pt-10 md:-mt-28 md:rounded-t-[126px]"
+      >
+        <div class="container">
+          <h1 class="mb-10 text-center font-poppins text-3xl font-bold">
+            Kumpulan Data <span class="text-yellow">Kenakalan</span> Remaja
+          </h1>
+          <p class="mx-auto max-w-3xl text-center text-secondary-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="./src/js/script.js"></script>
   </body>

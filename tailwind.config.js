@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "16px"
+      padding: "16px",
     },
     extend: {
       colors: {
         primary: {
           100: "#5562AD",
-          200: "#6171C8"
+          200: "#6171C8",
+          300: "#6E7CCE"
         },
         secondary: {
           100: '#D9D9D9',
@@ -20,6 +21,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["poppins", "sans-serif"],
+        radioCasnada: ["Radio Canada", "sans-serif"]
       },
       backgroundImage: {
         'rebellium-pattern': "url('./src/assets/sekiro.png')"

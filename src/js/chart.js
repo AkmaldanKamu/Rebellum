@@ -1,4 +1,4 @@
-import Chart from 'chart.js/auto'
+import Chart from 'chart.js/auto';
 
 (async function() {
   const data = [
@@ -14,13 +14,17 @@ import Chart from 'chart.js/auto'
   new Chart(
     document.getElementById('mychart'),
     {
-      type: 'bar',
+      type: 'line',
       data: {
         labels: data.map(row => row.year),
         datasets: [
           {
             label: 'Acquisitions by year',
-            data: data.map(row => row.count)
+            data: data.map(row => row.count),
+            pointStyle: 'circle',
+            pointRadius: 10,
+            pointHoverRadius: 15,
+            borderColor: "#6171C8",
           }
         ]
       }

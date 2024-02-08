@@ -1,7 +1,15 @@
 import 'flowbite';
 import { Accordion } from 'flowbite';
+import Typed from 'typed.js';
 import './accordion';
 import './chart'
+
+const indonesia = new Typed('.indonesia', {
+	strings: ["di Indonesia"],
+	typeSpeed: 60,
+	showCursor: false,
+	startDelay: 500
+  });
 
 window.onscroll = () => {
 	const header = document.querySelector('nav');

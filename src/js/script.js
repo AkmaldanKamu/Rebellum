@@ -1,6 +1,7 @@
 import 'flowbite';
 import { Accordion } from 'flowbite';
 import './accordion';
+import './chart'
 
 window.onscroll = () => {
 	const header = document.querySelector('nav');

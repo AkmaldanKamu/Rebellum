@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
     <!-- navbar section start-->
     <header>
       <nav
-        class="fixed left-0 top-0 w-full border-gray-200 bg-white bg-opacity-70"
+        class="fixed left-0 top-0 z-[99999] w-full border-gray-200 bg-white bg-opacity-70"
       >
         <div
           class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4"
@@ -56,107 +56,49 @@
             >
               <li>
                 <a
-                  href="#"
-                  class="block rounded bg-blue-700 px-3 py-2 text-white dark:bg-blue-600 md:bg-transparent md:p-0 md:text-blue-700 md:dark:bg-transparent md:dark:text-blue-500"
+                  id="homenav"
+                  href="#home"
+                  class="active relative block rounded px-3 py-2 text-gray-800 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:transition before:content-[''] hover:before:scale-x-100 md:p-0"
                   aria-current="page"
                   >Beranda</a
                 >
               </li>
               <li>
-                <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex w-full items-center justify-between rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:text-white md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                >
-                  Dropdown
-                  <svg
-                    class="ms-2.5 h-2.5 w-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div
-                  id="dropdownNavbar"
-                  class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow dark:divide-gray-600 dark:bg-gray-700"
-                >
-                  <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                    aria-labelledby="dropdownLargeButton"
-                  >
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Dashboard</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Settings</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Earnings</a
-                      >
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Sign out</a
-                    >
-                  </div>
-                </div>
-              </li>
-              <li>
                 <a
-                  href="#"
-                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  id="nav-about"
+                  href="#about"
+                  class="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                   >Tentang</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  id="nav-kasus"
+                  href="#kasus"
+                  class="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                   >Kasus</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                  >Penyebab & Solusi</a
+                  id="nav-pengaruh"
+                  href="#pengaruh"
+                  class="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >Pengaruh</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  id="nav-data"
+                  href="#data"
+                  class="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                   >Data</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block rounded rounded-l-full rounded-r-full bg-primary-100 px-5 py-2 text-white hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  class="block rounded rounded-l-full rounded-r-full bg-primary-100 px-5 py-2 text-white transition-colors hover:bg-primary-200"
                   >Quote</a
                 >
               </li>
@@ -168,7 +110,7 @@
     <!-- navbar section end -->
 
     <!-- hero section start -->
-    <section id="jumbotron" class="pt-36">
+    <section id="home" class="pt-36">
       <div class="container">
         <div
           class="flex w-full flex-col-reverse flex-wrap items-center justify-between gap-10 md:flex-row md:gap-0"
@@ -197,206 +139,213 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- hero section end -->
 
-    <!-- accordion section start -->
-    <section id="temuanUmum" class="">
-      <img src="./src/assets/wave.svg" alt="wave" class="w-full" />
-      <div class="-mt-1 bg-primary-100 pb-10">
-        <div class="container">
-          <h1 class="text-center text-4xl font-bold text-white">Temuan Umum</h1>
-          <p class="mt-5 text-center text-xl font-semibold text-white">
-            Beberapa temuan umum dalam penelitian Kenakalan Remaja
-          </p>
+      <!-- accordion section start -->
+      <div class="">
+        <img src="./src/assets/wave.svg" alt="wave" class="w-full" />
+        <div class="-mt-1 bg-primary-100 pb-10">
+          <div class="container">
+            <h1 class="text-center text-4xl font-bold text-white">
+              Temuan Umum
+            </h1>
+            <p class="mt-5 text-center text-xl font-semibold text-white">
+              Beberapa temuan umum dalam penelitian Kenakalan Remaja
+            </p>
 
-          <div class="mt-10 w-full">
-            <div class="accordion">
-              <div class="accordion-item my-2">
-                <button
-                  class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                >
-                  <span class="text-lg font-medium">
-                    Faktor-faktor yang dapat meningkatkan risiko</span
+            <div class="mt-10 w-full">
+              <div class="accordion">
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                   >
-                  <svg
-                    class="plus-icon hidden h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    <span class="text-lg font-medium">
+                      Faktor-faktor yang dapat meningkatkan risiko</span
+                    >
+                    <svg
+                      class="plus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
                   >
-                    <path
-                      class="plus"
-                      d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                    />
-                  </svg>
-                  <svg
-                    class="minus-icon h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      class="minus"
-                      d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                >
-                  Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                  orangtua, teman sebaya yang terlibat dalam perilaku berisiko,
-                  masalah keluarga, dan ketidakstabilan emosional atau mental.
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item my-2">
-                <button
-                  class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                >
-                  <span class="text-lg font-medium"> Jenis Kenakalan </span>
-                  <svg
-                    class="plus-icon hidden h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                   >
-                    <path
-                      class="plus"
-                      d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                    />
-                  </svg>
-                  <svg
-                    class="minus-icon h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    <span class="text-lg font-medium"> Jenis Kenakalan </span>
+                    <svg
+                      class="plus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
                   >
-                    <path
-                      class="minus"
-                      d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                >
-                  Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                  orangtua, teman sebaya yang terlibat dalam perilaku berisiko,
-                  masalah keluarga, dan ketidakstabilan emosional atau mental.
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item my-2">
-                <button
-                  class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                >
-                  <span class="text-lg font-medium">
-                    Dampak Sosial dan Psikologis</span
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                   >
-                  <svg
-                    class="plus-icon hidden h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    <span class="text-lg font-medium">
+                      Dampak Sosial dan Psikologis</span
+                    >
+                    <svg
+                      class="plus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
                   >
-                    <path
-                      class="plus"
-                      d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                    />
-                  </svg>
-                  <svg
-                    class="minus-icon h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      class="minus"
-                      d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                >
-                  Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                  orangtua, teman sebaya yang terlibat dalam perilaku berisiko,
-                  masalah keluarga, dan ketidakstabilan emosional atau mental.
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item my-2">
-                <button
-                  class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                >
-                  <span class="text-lg font-medium"
-                    >Intervensi dan Pencegahan</span
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                   >
-                  <svg
-                    class="plus-icon hidden h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    <span class="text-lg font-medium"
+                      >Intervensi dan Pencegahan</span
+                    >
+                    <svg
+                      class="plus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
                   >
-                    <path
-                      class="plus"
-                      d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                    />
-                  </svg>
-                  <svg
-                    class="minus-icon h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      class="minus"
-                      d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                >
-                  Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                  orangtua, teman sebaya yang terlibat dalam perilaku berisiko,
-                  masalah keluarga, dan ketidakstabilan emosional atau mental.
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item my-2">
-                <button
-                  class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                >
-                  <span class="text-lg font-medium"> Faktor Protektif</span>
-                  <svg
-                    class="plus-icon hidden h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                   >
-                    <path
-                      class="plus"
-                      d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                    />
-                  </svg>
-                  <svg
-                    class="minus-icon h-4 w-4 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    <span class="text-lg font-medium"> Faktor Protektif</span>
+                    <svg
+                      class="plus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
                   >
-                    <path
-                      class="minus"
-                      d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                >
-                  Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                  orangtua, teman sebaya yang terlibat dalam perilaku berisiko,
-                  masalah keluarga, dan ketidakstabilan emosional atau mental.
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- accordion section end -->
     </section>
-    <!-- accordion section end -->
+    <!-- hero section end -->
 
     <!-- rebellium section start -->
-    <section id="rebellium" class="pb-16 pt-16">
+    <section id="about" class="pb-16 pt-16">
       <div class="container">
         <div
           class="flex flex-col-reverse flex-wrap items-center justify-between gap-10 md:flex-row md:gap-10"
@@ -422,7 +371,7 @@
     <!-- rebellium section end -->
 
     <!-- carousel section start -->
-    <section id="carousel" class="pb-32 pt-20">
+    <section id="kasus" class="pb-32 pt-20">
       <div class="relative bg-primary-100 pt-32">
         <div class="container">
           <div
@@ -919,6 +868,7 @@
           </div>
           <!-- card 2 -->
           <div
+            id="solusi"
             class="w-full rounded-lg border px-5 py-5 shadow-lg md:w-[400px]"
           >
             <h2 class="mb-5 text-center text-2xl font-semibold">
@@ -1109,7 +1059,7 @@
     <!-- pengaruh section end -->
 
     <!-- data section start -->
-    <section id="kumpulanData">
+    <section id="data">
       <img
         src="./src/assets/city.svg"
         alt=""

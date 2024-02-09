@@ -385,11 +385,12 @@
     <!-- carousel section start -->
     <section id="kasus" class="pb-32">
       <div class="relative bg-primary-100 pt-32">
-        <div class="container">
+        <div class="container overflow-hidden">
           <div
             class="absolute -top-16 left-1/2 grid w-full -translate-x-1/2 grid-cols-6 rounded-[40px] bg-primary-300 sm:w-[80%] md:w-2/3 md:max-w-screen-md"
           >
             <button
+              onclick="scrollToCard(1)"
               class="flex flex-col items-center rounded-l-[40px] border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
@@ -404,6 +405,7 @@
               </p>
             </button>
             <button
+              onclick="scrollToCard(2)"
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
@@ -418,6 +420,7 @@
               </p>
             </button>
             <button
+              onclick="scrollToCard(3)"
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
@@ -432,6 +435,7 @@
               </p>
             </button>
             <button
+              onclick="scrollToCard(4)"
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
@@ -446,6 +450,7 @@
               </p>
             </button>
             <button
+              onclick="scrollToCard(5)"
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
@@ -460,6 +465,7 @@
               </p>
             </button>
             <button
+              onclick="scrollToCard(6)"
               class="flex flex-col items-center rounded-r-[40px] border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
@@ -474,26 +480,145 @@
               </p>
             </button>
           </div>
-
-          <div
-            class="px mx-auto flex max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
-          >
-            <div>
-              <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                Membedah Tawuran Remaja
-              </h1>
-              <p class="text- w-fit max-w-screen-sm text-secondary-200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. 
-              </p>
+          <div class="relative grid w-max grid-cols-6 gap-44">
+            <!-- card 1  start-->
+            <div
+              id="card-1"
+              class="mx-36 flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+            >
+              <div>
+                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                  Membedah Tawuran Remaja
+                </h1>
+                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+              <div class="w-full md:w-auto">
+                <div
+                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                ></div>
+              </div>
             </div>
-            <div class="w-full md:w-auto">
-              <div
-                class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
-              ></div>
+            <!-- card 1 end  -->
+            <!-- card 2  start-->
+            <div
+              id="card-2"
+              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+            >
+              <div>
+                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                  Membedah Tawuran Remaja
+                </h1>
+                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+              <div class="w-full md:w-auto">
+                <div
+                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                ></div>
+              </div>
             </div>
+            <!-- card 2 end  -->
+            <!-- card 3  start-->
+            <div
+              id="card-3"
+              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+            >
+              <div>
+                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                  Membedah Tawuran Remaja
+                </h1>
+                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+              <div class="w-full md:w-auto">
+                <div
+                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                ></div>
+              </div>
+            </div>
+            <!-- card 3 end  -->
+            <!-- card 4  start-->
+            <div
+              id="card-4"
+              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+            >
+              <div>
+                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                  Membedah Tawuran Remaja
+                </h1>
+                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+              <div class="w-full md:w-auto">
+                <div
+                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                ></div>
+              </div>
+            </div>
+            <!-- card 4 end  -->
+            <!-- card 5  start-->
+            <div
+              id="card-5"
+              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+            >
+              <div>
+                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                  Membedah Tawuran Remaja
+                </h1>
+                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+              <div class="w-full md:w-auto">
+                <div
+                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                ></div>
+              </div>
+            </div>
+            <!-- card 5 end  -->
+            <!-- card 6  start-->
+            <div
+              id="card-6"
+              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+            >
+              <div>
+                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                  Membedah Tawuran Remaja
+                </h1>
+                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+              <div class="w-full md:w-auto">
+                <div
+                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                ></div>
+              </div>
+            </div>
+            <!-- card 6 end  -->
           </div>
         </div>
       </div>
@@ -1132,5 +1257,6 @@
     <!-- data section end -->
 
     <script type="module" src="./src/js/script.js"></script>
+    <script src="./src/js/carousel.js"></script>
   </body>
 </html>

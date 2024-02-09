@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import celurit from '../assets/celurit/celurit.gltf';
 
 const canvas = document.getElementById('canvas')
 
@@ -32,7 +33,7 @@ ambientLight.intensity = 15;
 scene.add(ambientLight)
 
 const loader = new GLTFLoader();
-loader.load('../assets/3D/celurit/celurit.gltf', (gltf) => {
+loader.load(celurit, (gltf) => {
     gltf.scene.scale.set(10, 10, 10)
     gltf.scene.rotation.z = Math.PI / 8
     scene.add(gltf.scene)

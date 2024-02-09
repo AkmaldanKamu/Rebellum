@@ -41,6 +41,7 @@ console.log(loader);
 
 const orbit = new OrbitControls(camera, canvas);
 orbit.enablePan = false
+orbit.enableZoom = false
 orbit.update();
 
 function animate() {

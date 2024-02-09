@@ -387,7 +387,7 @@
       <div class="relative bg-primary-100 pt-32">
         <div class="container overflow-hidden">
           <div
-            class="absolute -top-16 left-1/2 grid w-full -translate-x-1/2 grid-cols-6 rounded-[40px] bg-primary-300 sm:w-[80%] md:w-2/3 md:max-w-screen-md"
+            class="absolute -top-16 left-1/2 grid w-full -translate-x-1/2 grid-cols-5 rounded-[40px] bg-primary-300 sm:w-[80%] md:w-2/3 md:max-w-screen-md md:grid-cols-6"
           >
             <button
               onclick="scrollToCard(1)"
@@ -466,7 +466,7 @@
             </button>
             <button
               onclick="scrollToCard(6)"
-              class="flex flex-col items-center rounded-r-[40px] border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="hidden flex-col items-center rounded-r-[40px] border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:flex md:px-10 md:py-5"
             >
               <img
                 src="./src/assets/drugs.svg"
@@ -480,11 +480,11 @@
               </p>
             </button>
           </div>
-          <div class="relative grid w-max grid-cols-6 gap-44">
+          <div class="relative grid w-max grid-cols-6 justify-center gap-44">
             <!-- card 1  start-->
             <div
               id="card-1"
-              class="mx-36 flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+              class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
                 <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
@@ -499,7 +499,7 @@
               </div>
               <div class="w-full md:w-auto">
                 <div
-                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                  class="h-[300px] w-[300px] bg-secondary-200 md:h-[476px] md:w-[476px]"
                 ></div>
               </div>
             </div>
@@ -507,7 +507,7 @@
             <!-- card 2  start-->
             <div
               id="card-2"
-              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+              class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
                 <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
@@ -522,7 +522,7 @@
               </div>
               <div class="w-full md:w-auto">
                 <div
-                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                  class="h-[300px] w-[300px] bg-secondary-200 md:h-[476px] md:w-[476px]"
                 ></div>
               </div>
             </div>
@@ -530,7 +530,7 @@
             <!-- card 3  start-->
             <div
               id="card-3"
-              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+              class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
                 <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
@@ -545,7 +545,7 @@
               </div>
               <div class="w-full md:w-auto">
                 <div
-                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                  class="h-[300px] w-[300px] bg-secondary-200 md:h-[476px] md:w-[476px]"
                 ></div>
               </div>
             </div>
@@ -553,7 +553,7 @@
             <!-- card 4  start-->
             <div
               id="card-4"
-              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+              class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
                 <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
@@ -568,7 +568,7 @@
               </div>
               <div class="w-full md:w-auto">
                 <div
-                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                  class="h-[300px] w-[300px] bg-secondary-200 md:h-[476px] md:w-[476px]"
                 ></div>
               </div>
             </div>
@@ -576,7 +576,7 @@
             <!-- card 5  start-->
             <div
               id="card-5"
-              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+              class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
                 <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
@@ -591,7 +591,7 @@
               </div>
               <div class="w-full md:w-auto">
                 <div
-                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                  class="h-[300px] w-[300px] bg-secondary-200 md:h-[476px] md:w-[476px]"
                 ></div>
               </div>
             </div>
@@ -599,7 +599,7 @@
             <!-- card 6  start-->
             <div
               id="card-6"
-              class="flex w-[1280px] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 md:flex-row"
+              class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
                 <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
@@ -614,7 +614,7 @@
               </div>
               <div class="w-full md:w-auto">
                 <div
-                  class="h-[300px] w-full bg-secondary-200 md:h-[476px] md:w-[476px]"
+                  class="h-[300px] w-[300px] bg-secondary-200 md:h-[476px] md:w-[476px]"
                 ></div>
               </div>
             </div>

@@ -1,31 +1,55 @@
 import Chart from 'chart.js/auto';
 
 (async function() {
-  const data = [
-    { year: 2010, count: 10 },
-    { year: 2011, count: 20 },
-    { year: 2012, count: 15 },
-    { year: 2013, count: 25 },
-    { year: 2014, count: 22 },
-    { year: 2015, count: 30 },
-    { year: 2016, count: 28 },
+  const tawuran = [
+    { year: '2018 - 2020', kasus: 13.45 },
+    { year: '2020 - 2022', kasus: 15.75 },
+    { year: '2022 - 2024', kasus: 31.45 },
   ];
+
+  const narkoba = [
+    { year: '2018 - 2020', kasus: 28 },
+    { year: '2020 - 2022', kasus: 27 },
+    { year: '2022 - 2024', kasus: 17 },
+  ]
+
+  const rokok = [
+    { year: '2018 - 2020', kasus: 18.8 },
+    { year: '2020 - 2022', kasus: 22.4 },
+    { year: '2022 - 2024', kasus: 28.6 },
+  ]
 
   new Chart(
     document.getElementById('mychart'),
     {
       type: 'line',
       data: {
-        labels: data.map(row => row.year),
+        labels: tawuran.map(row => row.year),
         datasets: [
           {
-            label: 'Acquisitions by year',
-            data: data.map(row => row.count),
+            label: 'Data tawuran',
+            data: tawuran.map(row => row.kasus),
             pointStyle: 'circle',
             pointRadius: 10,
             pointHoverRadius: 15,
             borderColor: "#6171C8",
-          }
+          },
+          {
+            label: 'Data narkoba',
+            data: narkoba.map(row => row.kasus),
+            pointStyle: 'circle',
+            pointRadius: 10,
+            pointHoverRadius: 15,
+            borderColor: "#FF6F61",
+          },
+          {
+            label: 'Data rokok',
+            data: rokok.map(row => row.kasus),
+            pointStyle: 'circle',
+            pointRadius: 10,
+            pointHoverRadius: 15,
+            borderColor: "#7A7A7A",
+          },
         ]
       }
     }

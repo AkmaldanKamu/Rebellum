@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebellium</title>
-    <link rel="stylesheet" href="./src/css/input.css" />
+    <link rel="stylesheet" href="./css/input.css" />
   </head>
   <body>
     <!-- navbar section start-->
@@ -136,18 +136,19 @@
             </button>
           </div>
           <div class="relative flex w-1/2 items-center justify-center px-4">
-            <img
-              src="./src/assets/circle blur.png"
+            <!-- <img
+              src="./assets/circle blur.png"
               alt="lingkaran blur"
               class="h-auto w-[390px] align-middle"
-            />
+            /> -->
+            <canvas id="canvas" class="h-[300px] w-[300px]"></canvas>
           </div>
         </div>
       </div>
 
       <!-- accordion section start -->
       <div class="">
-        <img src="./src/assets/wave.svg" alt="wave" class="w-full" />
+        <img src="./assets/wave.svg" alt="wave" class="w-full" />
         <div class="-mt-1 bg-primary-100 pb-10">
           <div class="container">
             <h1
@@ -356,7 +357,7 @@
     <section
       id="about"
       class="bg-cover bg-center bg-repeat pb-36 pt-16"
-      style="background-image: url(./src/assets/background.png)"
+      style="background-image: url(./assets/background.png)"
     >
       <div class="container">
         <div
@@ -394,7 +395,7 @@
               class="flex flex-col items-center rounded-l-[40px] border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
-                src="./src/assets/drugs.svg"
+                src="./assets/drugs.svg"
                 alt=""
                 class="h-auto w-[50px] md:w-[100px]"
               />
@@ -409,7 +410,7 @@
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
-                src="./src/assets/drugs.svg"
+                src="./assets/drugs.svg"
                 alt=""
                 class="h-auto w-[50px] md:w-[100px]"
               />
@@ -424,7 +425,7 @@
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
-                src="./src/assets/drugs.svg"
+                src="./assets/drugs.svg"
                 alt=""
                 class="h-auto w-[50px] md:w-[100px]"
               />
@@ -439,7 +440,7 @@
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
-                src="./src/assets/drugs.svg"
+                src="./assets/drugs.svg"
                 alt=""
                 class="h-auto w-[50px] md:w-[100px]"
               />
@@ -454,7 +455,7 @@
               class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
             >
               <img
-                src="./src/assets/drugs.svg"
+                src="./assets/drugs.svg"
                 alt=""
                 class="h-auto w-[50px] md:w-[100px]"
               />
@@ -469,7 +470,7 @@
               class="hidden flex-col items-center rounded-r-[40px] border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:flex md:px-10 md:py-5"
             >
               <img
-                src="./src/assets/drugs.svg"
+                src="./assets/drugs.svg"
                 alt=""
                 class="h-auto w-[50px] md:w-[100px]"
               />
@@ -623,7 +624,7 @@
         </div>
       </div>
       <img
-        src="./src/assets/wave-triangle.png"
+        src="./assets/wave-triangle.png"
         alt=""
         class="m-auto -mt-1 flex h-auto w-full"
         style="-webkit-user-drag: none"
@@ -1231,11 +1232,7 @@
 
     <!-- data section start -->
     <section id="data">
-      <img
-        src="./src/assets/city.svg"
-        alt=""
-        class="relative -z-10 -mt-5 w-full"
-      />
+      <img src="./assets/city.svg" alt="" class="relative -z-10 -mt-5 w-full" />
       <div
         class="z-20 -mt-10 h-96 w-full rounded-t-3xl bg-white pt-10 md:-mt-28 md:rounded-t-[126px]"
       >
@@ -1250,13 +1247,13 @@
             aliquip.
           </p>
 
-          <canvas id="mychart"></canvas>
+          <canvas id="mychart" class="container mx-10 border py-5"></canvas>
         </div>
       </div>
     </section>
     <!-- data section end -->
 
-    <script type="module" src="./src/js/script.js"></script>
-    <script src="./src/js/carousel.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 import Chart from "chart.js/auto";
 
 (async () => {
+  const chartHTML = document.getElementById("mychart");
   let tawuran = [
     { year: "2016 - 2018", kasus: 12.35 },
     { year: "2018 - 2020", kasus: 14.25 },
@@ -23,6 +24,7 @@ import Chart from "chart.js/auto";
       { year: "2020 - 2022", kasus: 16.55 },
     ];
     updateChart();
+    chartHTML.scrollIntoView({ behavior: "smooth" });
   });
 
   const narkobaBtn = document.getElementById("narkoba");
@@ -34,6 +36,7 @@ import Chart from "chart.js/auto";
       { year: "2022 - 2024", kasus: 17 },
     ];
     updateChart();
+    chartHTML.scrollIntoView({ behavior: "smooth" });
   });
 
   const merokokBtn = document.getElementById("merokok");
@@ -45,6 +48,7 @@ import Chart from "chart.js/auto";
       { year: "2022 - 2024", kasus: 28.6 },
     ];
     updateChart();
+    chartHTML.scrollIntoView({ behavior: "smooth" });
   });
 
   const seksual = document.getElementById("seksual");
@@ -55,6 +59,7 @@ import Chart from "chart.js/auto";
       { year: "2017", kasus: 10 },
     ];
     updateChart();
+    chartHTML.scrollIntoView({ behavior: "smooth" });
   });
 
   const perundungan = document.getElementById("perundungan");
@@ -69,6 +74,7 @@ import Chart from "chart.js/auto";
       { year: "siswa SMA", kasus: 18.75 },
     ];
     updateChart();
+    chartHTML.scrollIntoView({ behavior: "smooth" });
   });
 
   const minumanKeras = document.getElementById("minumanKeras");
@@ -80,9 +86,10 @@ import Chart from "chart.js/auto";
       { year: "15 - 19 tahun (wanita)", kasus: 58 },
     ];
     updateChart();
+    chartHTML.scrollIntoView({ behavior: "smooth" });
   });
 
-  const myChart = new Chart(document.getElementById("mychart"), {
+  const myChart = new Chart(chartHTML, {
     type: "line",
     data: {
       labels: tawuran.map((row) => row.year),

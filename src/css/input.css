@@ -32,15 +32,14 @@ body {
   transition: transform 0.3s ease; Efek transisi
 } */
 
-
 body {
   --sb-track-color: #ffffff;
   --sb-thumb-color: #6874b9;
-  --sb-size: 1px;
+  --sb-size: 5px;
 }
 
 body::-webkit-scrollbar {
-  width: var(--sb-size)
+  width: var(--sb-size);
 }
 
 body::-webkit-scrollbar-track {
@@ -51,13 +50,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 3px;
-  
 }
 
 @supports not selector(::-webkit-scrollbar) {
   body {
-    scrollbar-color: var(--sb-thumb-color)
-                     var(--sb-track-color);
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
 
@@ -67,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 .line {
   position: absolute;
-  top: 40%; 
+  top: 40%;
   left: 0;
   width: 0;
   height: 5px; /* Adjust thickness as needed */

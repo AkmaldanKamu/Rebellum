@@ -60,3 +60,17 @@ body::-webkit-scrollbar-thumb {
                      var(--sb-track-color);
   }
 }
+
+.bg-cover {
+  height: 100vh;
+  position: relative;
+}
+.line {
+  position: absolute;
+  top: 40%; 
+  left: 0;
+  width: 0;
+  height: 5px; /* Adjust thickness as needed */
+  background-color: red; /* Change color as needed */
+  z-index: -99;
+}

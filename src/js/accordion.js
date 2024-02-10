@@ -27,3 +27,4 @@
 // const accordion = new Accordion(accordionElement, accordionItems);
 
 // accordion.init();
+

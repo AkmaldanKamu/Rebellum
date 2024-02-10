@@ -1,9 +1,12 @@
 import 'flowbite';
 import { Accordion } from 'flowbite';
 import Typed from 'typed.js';
+import './gsap';
 import './accordion';
-import './chart'
-import './three'
+import './chart';
+import './three';
+import './gsap.js';
+
 
 const indonesia = new Typed('.indonesia', {
 	strings: ["di Indonesia"],

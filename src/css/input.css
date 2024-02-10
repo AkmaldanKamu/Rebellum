@@ -63,11 +63,5 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 .line {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 0;
-  height: 5px; /* Adjust thickness as needed */
-  background-color: red; /* Change color as needed */
-  z-index: -99;
+  @apply absolute -bottom-1 left-0 -z-[99] h-2 w-0 bg-yellow;
 }

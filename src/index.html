@@ -385,9 +385,10 @@
           <div class="w-full md:w-1/2">
             <h1
               id="rebelliumText"
-              class="mb-8 font-radioCasnada text-4xl font-semibold md:text-5xl"
+              class="relative mb-8 font-radioCasnada text-4xl font-semibold md:text-5xl"
             >
               Apa itu <span class="text-yellow">Rebellium?</span>
+              <div class="line"></div>
             </h1>
             <p
               id="rebelliumDesc"
@@ -400,8 +401,6 @@
             </p>
           </div>
         </div>
-        <!-- Animated line -->
-        <div class="line"></div>
       </div>
     </section>
     <!-- about section end -->
@@ -411,7 +410,7 @@
       <div class="relative bg-primary-100 pt-32">
         <div class="container overflow-x-hidden">
           <div
-            class="absolute -top-16 left-1/2 grid w-full -translate-x-1/2 scale-90 grid-cols-6 rounded-[40px] bg-primary-300 sm:w-[80%] md:w-2/3 md:max-w-screen-md md:scale-100"
+            class="absolute -top-16 left-1/2 grid w-full -translate-x-1/2 scale-95 grid-cols-6 rounded-[40px] bg-primary-300 sm:w-[80%] md:w-2/3 md:max-w-screen-md md:scale-100"
           >
             <button
               onclick="scrollToCard(1)"
@@ -423,7 +422,7 @@
                 class="h-auto w-[50px] md:w-[100px]"
               />
               <p
-                class="font-poppins text-sm font-medium text-white md:text-base"
+                class="font-poppins text-xs font-medium text-white md:text-base"
               >
                 Tawuran
               </p>
@@ -438,7 +437,7 @@
                 class="h-auto w-[50px] md:w-[100px]"
               />
               <p
-                class="font-poppins text-sm font-medium text-white md:text-base"
+                class="font-poppins text-xs font-medium text-white md:text-base"
               >
                 Narkoba
               </p>
@@ -453,7 +452,7 @@
                 class="h-auto w-[50px] md:w-[100px]"
               />
               <p
-                class="font-poppins text-sm font-medium text-white md:text-base"
+                class="font-poppins text-xs font-medium text-white md:text-base"
               >
                 Merokok
               </p>
@@ -468,7 +467,7 @@
                 class="h-auto w-[50px] md:w-[100px]"
               />
               <p
-                class="font-poppins text-sm font-medium text-white md:text-base"
+                class="font-poppins text-xs font-medium text-white md:text-base"
               >
                 Seksual
               </p>
@@ -483,7 +482,7 @@
                 class="h-auto w-[50px] md:w-[100px]"
               />
               <p
-                class="font-poppins text-sm font-medium text-white md:text-base"
+                class="font-poppins text-xs font-medium text-white md:text-base"
               >
                 Perundungan
               </p>
@@ -498,7 +497,7 @@
                 class="h-auto w-[50px] md:w-[100px]"
               />
               <p
-                class="font-poppins text-sm font-medium text-white md:text-base"
+                class="font-poppins text-xs font-medium text-white md:text-base"
               >
                 Mabuk
               </p>
@@ -509,7 +508,7 @@
             <!-- card 1  start-->
             <div
               id="card-1"
-              class="flex w-[90vw] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
+              class="flex w-[90vw] max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[95vw] md:flex-row"
             >
               <div>
                 <h1
@@ -1285,12 +1284,20 @@
 
     <!-- data section start -->
     <section id="data">
-      <img src="./assets/city.svg" alt="" class="relative -z-10 -mt-5 w-full" />
+      <div class="relative overflow-hidden pt-48">
+        <img
+          src="./assets/city2.png"
+          alt=""
+          class="city relative -left-80 bottom-20 -z-10 -mt-5 w-full scale-[1.7]"
+        />
+      </div>
       <div
         class="z-20 -mt-10 h-96 w-full rounded-t-3xl bg-white pt-10 md:-mt-28 md:rounded-t-[126px]"
       >
         <div class="container">
-          <h1 class="mb-10 text-center font-poppins text-3xl font-bold">
+          <h1
+            class="mb-10 text-center font-poppins text-3xl font-bold md:text-4xl"
+          >
             Kumpulan Data <span class="text-yellow">Kenakalan</span> Remaja
           </h1>
           <p
@@ -1302,14 +1309,16 @@
             strategi pencegahan yang efektif.
           </p>
 
-          <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
+          <div
+            class="mt-10 grid grid-cols-2 grid-rows-3 flex-wrap items-center justify-center gap-5 md:flex"
+          >
             <!-- card 1 -->
             <button
               id="tawuran"
-              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90 md:w-fit"
             >
               <div
-                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <svg
                   width="64"
@@ -1326,17 +1335,17 @@
               </div>
 
               <div class="text-white">
-                <h5 class="text-xl font-bold">Tawuran</h5>
-                <p class="text-xl">Kenaikan hingga 31,45%</p>
+                <h5 class="text-xs font-bold md:text-xl">Tawuran</h5>
+                <p class="text-xs md:text-xl">Kenaikan hingga 31,45%</p>
               </div>
             </button>
             <!-- card 2 -->
             <div
               id="narkoba"
-              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:opacity-90"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:opacity-90 md:w-fit"
             >
               <div
-                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <svg
                   width="64"
@@ -1353,17 +1362,17 @@
               </div>
 
               <div class="text-white">
-                <h5 class="text-xl font-bold">Narkoba</h5>
-                <p class="text-xl">Penurunan hingga 17%</p>
+                <h5 class="text-xs font-bold md:text-xl">Narkoba</h5>
+                <p class="text-xs md:text-xl">Penurunan hingga 17%</p>
               </div>
             </div>
             <!-- card 3 -->
             <div
               id="merokok"
-              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:opacity-90"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:opacity-90 md:w-fit"
             >
               <div
-                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <svg
                   width="64"
@@ -1380,17 +1389,17 @@
               </div>
 
               <div class="text-white">
-                <h5 class="text-xl font-bold">Merokok</h5>
-                <p class="text-xl">Kenaikan hingga 28,6%</p>
+                <h5 class="text-xs font-bold md:text-xl">Merokok</h5>
+                <p class="text-xs md:text-xl">Kenaikan hingga 28,6%</p>
               </div>
             </div>
             <!-- card 4 -->
             <div
               id="seksual"
-              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:opacity-90"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:opacity-90 md:w-fit"
             >
               <div
-                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <svg
                   width="64"
@@ -1407,17 +1416,17 @@
               </div>
 
               <div class="text-white">
-                <h5 class="text-xl font-bold">Seksual</h5>
-                <p class="text-xl">Kenaikan hingga 46%</p>
+                <h5 class="text-xs font-bold md:text-xl">Seksual</h5>
+                <p class="text-xs md:text-xl">Kenaikan hingga 46%</p>
               </div>
             </div>
             <!-- card 5 -->
             <div
               id="perundungan"
-              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:opacity-90"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:opacity-90 md:w-fit"
             >
               <div
-                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <svg
                   width="64"
@@ -1434,17 +1443,17 @@
               </div>
 
               <div class="text-white">
-                <h5 class="text-xl font-bold">Perundungan</h5>
-                <p class="text-xl">Kenaikan hingga 31,45%</p>
+                <h5 class="text-xs font-bold md:text-xl">Perundungan</h5>
+                <p class="text-xs md:text-xl">Kenaikan hingga 31,45%</p>
               </div>
             </div>
             <!-- card 6 -->
             <div
               id="minumanKeras"
-              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90 md:w-fit"
             >
               <div
-                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+                class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <svg
                   width="64"
@@ -1461,13 +1470,13 @@
               </div>
 
               <div class="text-white">
-                <h5 class="text-xl font-bold">Tawuran</h5>
-                <p class="text-xl">Kenaikan hingga 31,45%</p>
+                <h5 class="text-xs font-bold md:text-xl">Tawuran</h5>
+                <p class="text-xs md:text-xl">Kenaikan hingga 31,45%</p>
               </div>
             </div>
           </div>
 
-          <h1 class="mb-10 mt-10 text-start font-poppins text-2xl font-bold">
+          <h1 class="my-10 font-poppins text-2xl font-bold md:ml-20">
             Persentase Data dalam <span class="text-yellow">Bentuk Grafik</span>
           </h1>
 

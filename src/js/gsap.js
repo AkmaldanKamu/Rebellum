@@ -27,28 +27,6 @@ tl.to(
   0,
 ); // Add the animation at the start of the timeline
 
-const tl2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#about",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: true,
-  },
-});
-
-const rebellumText = document.getElementById("rebelliumText");
-const rebellumDesc = document.getElementById("rebelliumDesc");
-tl2.to(rebellumText, {
-  scrollTrigger: rebellumText,
-  y: -20,
-  ease: "none",
-});
-tl2.to(rebellumDesc, {
-  scrollTrigger: rebellumDesc,
-  y: -20,
-  ease: "sine.out",
-});
-
 gsap.to(".pesawat", {
   scrollTrigger: {
     trigger: "#pengaruh",
@@ -56,5 +34,17 @@ gsap.to(".pesawat", {
     end: "bottom top",
     scrub: true,
   },
-  x: "-50vh",
+  x: "-100vh",
+  yoyoEase: true,
+});
+
+gsap.to(".city", {
+  scrollTrigger: {
+    trigger: "#data",
+    start: "top bottom",
+    end: "bottom center",
+    scrub: true,
+  },
+  // y: "-400px",
+  x: "400px",
 });

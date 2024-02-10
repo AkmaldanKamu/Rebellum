@@ -149,6 +149,7 @@
       <!-- accordion section start -->
       <div class="">
         <img src="./assets/wave.svg" alt="wave" class="w-full" />
+
         <div class="-mt-1 bg-primary-100 pb-10">
           <div class="container">
             <h1
@@ -158,53 +159,18 @@
             </h1>
 
             <div class="mt-10 w-full">
-              <div class="accordion">
+              <div class="accordion flex flex-col">
+                <!-- accordion-1 -->
                 <div class="accordion-item my-2">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
+                    onclick="toggleAccordion(this)"
                   >
                     <span class="text-base font-medium md:text-lg">
-                      Faktor-faktor yang dapat meningkatkan risiko</span
-                    >
-                    <svg
-                      class="plus-icon hidden h-4 w-4 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        class="plus"
-                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                      />
-                    </svg>
-                    <svg
-                      class="minus-icon h-4 w-4 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        class="minus"
-                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    </svg>
-                  </button>
-                  <div
-                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                  >
-                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                    orangtua, teman sebaya yang terlibat dalam perilaku
-                    berisiko, masalah keluarga, dan ketidakstabilan emosional
-                    atau mental.
-                  </div>
-                </div>
-                <div class="accordion-item my-2">
-                  <button
-                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                  >
-                    <span class="text-base font-medium md:text-lg">
-                      Jenis Kenakalan
+                      Faktor-faktor yang dapat meningkatkan risiko
                     </span>
                     <svg
-                      class="plus-icon hidden h-4 w-4 fill-current"
+                      class="plus-icon h-4 w-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -214,7 +180,7 @@
                       />
                     </svg>
                     <svg
-                      class="minus-icon h-4 w-4 fill-current"
+                      class="minus-icon hidden h-4 w-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -233,15 +199,17 @@
                     atau mental.
                   </div>
                 </div>
+                <!-- accordion-2 -->
                 <div class="accordion-item my-2">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
+                    onclick="toggleAccordion(this)"
                   >
                     <span class="text-base font-medium md:text-lg">
-                      Dampak Sosial dan Psikologis</span
-                    >
+                      Faktor-faktor yang dapat meningkatkan risiko
+                    </span>
                     <svg
-                      class="plus-icon hidden h-4 w-4 fill-current"
+                      class="plus-icon h-4 w-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -251,7 +219,7 @@
                       />
                     </svg>
                     <svg
-                      class="minus-icon h-4 w-4 fill-current"
+                      class="minus-icon hidden h-4 w-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -270,52 +238,17 @@
                     atau mental.
                   </div>
                 </div>
+                <!-- accordion-3 -->
                 <div class="accordion-item my-2">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
-                  >
-                    <span class="text-base font-medium md:text-lg"
-                      >Intervensi dan Pencegahan</span
-                    >
-                    <svg
-                      class="plus-icon hidden h-4 w-4 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        class="plus"
-                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
-                      />
-                    </svg>
-                    <svg
-                      class="minus-icon h-4 w-4 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        class="minus"
-                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    </svg>
-                  </button>
-                  <div
-                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
-                  >
-                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
-                    orangtua, teman sebaya yang terlibat dalam perilaku
-                    berisiko, masalah keluarga, dan ketidakstabilan emosional
-                    atau mental.
-                  </div>
-                </div>
-                <div class="accordion-item my-2">
-                  <button
-                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
+                    onclick="toggleAccordion(this)"
                   >
                     <span class="text-base font-medium md:text-lg">
-                      Faktor Protektif</span
-                    >
+                      Faktor-faktor yang dapat meningkatkan risiko
+                    </span>
                     <svg
-                      class="plus-icon hidden h-4 w-4 fill-current"
+                      class="plus-icon h-4 w-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -325,7 +258,85 @@
                       />
                     </svg>
                     <svg
-                      class="minus-icon h-4 w-4 fill-current"
+                      class="minus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
+                  >
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
+                </div>
+                <!-- accordion-4 -->
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-base font-medium md:text-lg">
+                      Faktor-faktor yang dapat meningkatkan risiko
+                    </span>
+                    <svg
+                      class="plus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon hidden h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="minus"
+                        d="M4 9h12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="accordion-content hidden rounded-b-lg bg-primary-200 px-4 py-2 text-base text-slate-100"
+                  >
+                    Terjadinya kenakalan remaja, seperti kurangnya pengawasan
+                    orangtua, teman sebaya yang terlibat dalam perilaku
+                    berisiko, masalah keluarga, dan ketidakstabilan emosional
+                    atau mental.
+                  </div>
+                </div>
+                <!-- accordion-5 -->
+                <div class="accordion-item my-2">
+                  <button
+                    class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <span class="text-base font-medium md:text-lg">
+                      Faktor-faktor yang dapat meningkatkan risiko
+                    </span>
+                    <svg
+                      class="plus-icon h-4 w-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        class="plus"
+                        d="M7 10V4a1 1 0 0 1 2 0v6h6a1 1 0 1 1 0 2h-6v6a1 1 0 1 1-2 0v-6H4a1 1 0 1 1 0-2h6z"
+                      />
+                    </svg>
+                    <svg
+                      class="minus-icon hidden h-4 w-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >
@@ -353,7 +364,7 @@
     </section>
     <!-- hero section end -->
 
-    <!-- rebellium section start -->
+    <!-- about section start -->
     <section
       id="about"
       class="bg-cover bg-center bg-repeat pb-36 pt-16"
@@ -367,11 +378,13 @@
             <div class="h-[476px] w-full bg-secondary-100 md:w-[500px]"></div>
           </div>
           <div class="w-full md:w-1/2">
-            <h1 class="mb-8 font-radioCasnada text-5xl font-semibold">
+            <h1
+              class="mb-8 font-radioCasnada text-4xl font-semibold md:text-5xl"
+            >
               Apa itu <span class="text-yellow">Rebellium?</span>
             </h1>
 
-            <p class="md: text-base text-secondary-200 md:max-w-2xl">
+            <p class="text-sm text-secondary-200 md:max-w-2xl md:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -381,7 +394,7 @@
         </div>
       </div>
     </section>
-    <!-- rebellium section end -->
+    <!-- about section end -->
 
     <!-- carousel section start -->
     <section id="kasus" class="pb-32">
@@ -488,10 +501,14 @@
               class="flex w-1/2 max-w-screen-xl flex-col flex-wrap items-center justify-between rounded-xl bg-white px-10 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row"
             >
               <div>
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
+                <h1
+                  class="mb-5 font-radioCasnada text-3xl font-semibold md:text-4xl"
+                >
                   Membedah Tawuran Remaja
                 </h1>
-                <p class="text- w-fit max-w-screen-sm text-secondary-200">
+                <p
+                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -635,11 +652,11 @@
     <!-- pengaruh section start -->
     <section id="pengaruh" class="">
       <div class="container">
-        <h1 class="text-center text-4xl font-semibold">
+        <h1 class="text-center text-3xl font-semibold md:text-4xl">
           Pengaruh dari <span class="text-yellow">Kenakalan Remaja</span>
         </h1>
         <p
-          class="mx-auto mt-5 text-center text-base text-secondary-200 md:max-w-2xl"
+          class="mx-auto mt-5 text-center text-sm text-secondary-200 md:max-w-2xl md:text-base"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -1240,14 +1257,184 @@
           <h1 class="mb-10 text-center font-poppins text-3xl font-bold">
             Kumpulan Data <span class="text-yellow">Kenakalan</span> Remaja
           </h1>
-          <p class="mx-auto max-w-3xl text-center text-secondary-200">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip.
+          <p
+            class="mx-auto max-w-3xl text-center text-sm text-secondary-200 md:text-base"
+          >
+            Data tentang kenakalan remaja mencerminkan perilaku negatif seperti
+            penggunaan narkoba, tawuran, perokok, dan pelanggaran hukum lainnya.
+            Ini membantu kita memahami seriusnya masalah ini dan mengembangkan
+            strategi pencegahan yang efektif.
           </p>
 
-          <canvas id="mychart" class="container mx-10 border py-5"></canvas>
+          <div class="mt-5 flex flex-wrap items-center justify-center gap-5">
+            <!-- card 1 -->
+            <button
+              id="tawuran"
+              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+            >
+              <div
+                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+              >
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 101 101"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M68.175 14.7291C63.9667 10.5208 58.4958 8.41663 53.4458 8.41663C48.3958 8.41663 42.5042 10.5208 38.7167 14.7291L14.3083 38.2958C5.89168 46.7125 5.89168 59.7583 14.3083 68.175C22.725 76.5916 35.7709 76.5916 44.1875 68.175L68.175 44.1875C76.1709 36.1916 76.1709 22.725 68.175 14.7291ZM62.2834 38.2958L50.5 50.0791L35.35 35.35L16.8333 53.8666C16.8333 50.5 17.675 46.7125 20.6208 44.1875L44.6084 20.2C46.7125 18.0958 50.0792 16.8333 53.025 16.8333C55.9709 16.8333 59.3375 18.0958 61.8625 20.2C66.9125 25.6708 66.9125 33.2458 62.2834 38.2958ZM82.4834 29.8791C82.4834 33.2458 81.6417 36.1916 80.8 39.5583C85.0084 44.6083 85.0084 52.1833 80.3792 56.8125L68.5959 68.5958L62.2834 62.2833L50.5 74.0666C45.0292 79.5375 37.4542 82.4833 30.3 82.4833C31.1417 83.7458 31.9834 85.0083 33.2458 86.2708C41.6625 94.6875 54.7084 94.6875 63.125 86.2708L87.1125 62.2833C95.5292 53.8666 95.5292 40.8208 87.1125 32.4041C85.0084 31.5625 83.7459 30.7208 82.4834 29.8791Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-white">
+                <h5 class="text-xl font-bold">Tawuran</h5>
+                <p class="text-xl">Kenaikan hingga 31,45%</p>
+              </div>
+            </button>
+            <!-- card 2 -->
+            <div
+              id="narkoba"
+              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+            >
+              <div
+                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+              >
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 101 101"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M68.175 14.7291C63.9667 10.5208 58.4958 8.41663 53.4458 8.41663C48.3958 8.41663 42.5042 10.5208 38.7167 14.7291L14.3083 38.2958C5.89168 46.7125 5.89168 59.7583 14.3083 68.175C22.725 76.5916 35.7709 76.5916 44.1875 68.175L68.175 44.1875C76.1709 36.1916 76.1709 22.725 68.175 14.7291ZM62.2834 38.2958L50.5 50.0791L35.35 35.35L16.8333 53.8666C16.8333 50.5 17.675 46.7125 20.6208 44.1875L44.6084 20.2C46.7125 18.0958 50.0792 16.8333 53.025 16.8333C55.9709 16.8333 59.3375 18.0958 61.8625 20.2C66.9125 25.6708 66.9125 33.2458 62.2834 38.2958ZM82.4834 29.8791C82.4834 33.2458 81.6417 36.1916 80.8 39.5583C85.0084 44.6083 85.0084 52.1833 80.3792 56.8125L68.5959 68.5958L62.2834 62.2833L50.5 74.0666C45.0292 79.5375 37.4542 82.4833 30.3 82.4833C31.1417 83.7458 31.9834 85.0083 33.2458 86.2708C41.6625 94.6875 54.7084 94.6875 63.125 86.2708L87.1125 62.2833C95.5292 53.8666 95.5292 40.8208 87.1125 32.4041C85.0084 31.5625 83.7459 30.7208 82.4834 29.8791Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-white">
+                <h5 class="text-xl font-bold">Tawuran</h5>
+                <p class="text-xl">Kenaikan hingga 31,45%</p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div
+              id="merokok"
+              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+            >
+              <div
+                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+              >
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 101 101"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M68.175 14.7291C63.9667 10.5208 58.4958 8.41663 53.4458 8.41663C48.3958 8.41663 42.5042 10.5208 38.7167 14.7291L14.3083 38.2958C5.89168 46.7125 5.89168 59.7583 14.3083 68.175C22.725 76.5916 35.7709 76.5916 44.1875 68.175L68.175 44.1875C76.1709 36.1916 76.1709 22.725 68.175 14.7291ZM62.2834 38.2958L50.5 50.0791L35.35 35.35L16.8333 53.8666C16.8333 50.5 17.675 46.7125 20.6208 44.1875L44.6084 20.2C46.7125 18.0958 50.0792 16.8333 53.025 16.8333C55.9709 16.8333 59.3375 18.0958 61.8625 20.2C66.9125 25.6708 66.9125 33.2458 62.2834 38.2958ZM82.4834 29.8791C82.4834 33.2458 81.6417 36.1916 80.8 39.5583C85.0084 44.6083 85.0084 52.1833 80.3792 56.8125L68.5959 68.5958L62.2834 62.2833L50.5 74.0666C45.0292 79.5375 37.4542 82.4833 30.3 82.4833C31.1417 83.7458 31.9834 85.0083 33.2458 86.2708C41.6625 94.6875 54.7084 94.6875 63.125 86.2708L87.1125 62.2833C95.5292 53.8666 95.5292 40.8208 87.1125 32.4041C85.0084 31.5625 83.7459 30.7208 82.4834 29.8791Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-white">
+                <h5 class="text-xl font-bold">Tawuran</h5>
+                <p class="text-xl">Kenaikan hingga 31,45%</p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div
+              id="seksual"
+              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+            >
+              <div
+                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+              >
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 101 101"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M68.175 14.7291C63.9667 10.5208 58.4958 8.41663 53.4458 8.41663C48.3958 8.41663 42.5042 10.5208 38.7167 14.7291L14.3083 38.2958C5.89168 46.7125 5.89168 59.7583 14.3083 68.175C22.725 76.5916 35.7709 76.5916 44.1875 68.175L68.175 44.1875C76.1709 36.1916 76.1709 22.725 68.175 14.7291ZM62.2834 38.2958L50.5 50.0791L35.35 35.35L16.8333 53.8666C16.8333 50.5 17.675 46.7125 20.6208 44.1875L44.6084 20.2C46.7125 18.0958 50.0792 16.8333 53.025 16.8333C55.9709 16.8333 59.3375 18.0958 61.8625 20.2C66.9125 25.6708 66.9125 33.2458 62.2834 38.2958ZM82.4834 29.8791C82.4834 33.2458 81.6417 36.1916 80.8 39.5583C85.0084 44.6083 85.0084 52.1833 80.3792 56.8125L68.5959 68.5958L62.2834 62.2833L50.5 74.0666C45.0292 79.5375 37.4542 82.4833 30.3 82.4833C31.1417 83.7458 31.9834 85.0083 33.2458 86.2708C41.6625 94.6875 54.7084 94.6875 63.125 86.2708L87.1125 62.2833C95.5292 53.8666 95.5292 40.8208 87.1125 32.4041C85.0084 31.5625 83.7459 30.7208 82.4834 29.8791Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-white">
+                <h5 class="text-xl font-bold">Tawuran</h5>
+                <p class="text-xl">Kenaikan hingga 31,45%</p>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div
+              id="perundungan"
+              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+            >
+              <div
+                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+              >
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 101 101"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M68.175 14.7291C63.9667 10.5208 58.4958 8.41663 53.4458 8.41663C48.3958 8.41663 42.5042 10.5208 38.7167 14.7291L14.3083 38.2958C5.89168 46.7125 5.89168 59.7583 14.3083 68.175C22.725 76.5916 35.7709 76.5916 44.1875 68.175L68.175 44.1875C76.1709 36.1916 76.1709 22.725 68.175 14.7291ZM62.2834 38.2958L50.5 50.0791L35.35 35.35L16.8333 53.8666C16.8333 50.5 17.675 46.7125 20.6208 44.1875L44.6084 20.2C46.7125 18.0958 50.0792 16.8333 53.025 16.8333C55.9709 16.8333 59.3375 18.0958 61.8625 20.2C66.9125 25.6708 66.9125 33.2458 62.2834 38.2958ZM82.4834 29.8791C82.4834 33.2458 81.6417 36.1916 80.8 39.5583C85.0084 44.6083 85.0084 52.1833 80.3792 56.8125L68.5959 68.5958L62.2834 62.2833L50.5 74.0666C45.0292 79.5375 37.4542 82.4833 30.3 82.4833C31.1417 83.7458 31.9834 85.0083 33.2458 86.2708C41.6625 94.6875 54.7084 94.6875 63.125 86.2708L87.1125 62.2833C95.5292 53.8666 95.5292 40.8208 87.1125 32.4041C85.0084 31.5625 83.7459 30.7208 82.4834 29.8791Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-white">
+                <h5 class="text-xl font-bold">Tawuran</h5>
+                <p class="text-xl">Kenaikan hingga 31,45%</p>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div
+              id="minumanKeras"
+              class="flex w-fit max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90"
+            >
+              <div
+                class="flex h-[96px] w-[96px] items-center justify-center rounded-lg bg-white text-black"
+              >
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 101 101"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M68.175 14.7291C63.9667 10.5208 58.4958 8.41663 53.4458 8.41663C48.3958 8.41663 42.5042 10.5208 38.7167 14.7291L14.3083 38.2958C5.89168 46.7125 5.89168 59.7583 14.3083 68.175C22.725 76.5916 35.7709 76.5916 44.1875 68.175L68.175 44.1875C76.1709 36.1916 76.1709 22.725 68.175 14.7291ZM62.2834 38.2958L50.5 50.0791L35.35 35.35L16.8333 53.8666C16.8333 50.5 17.675 46.7125 20.6208 44.1875L44.6084 20.2C46.7125 18.0958 50.0792 16.8333 53.025 16.8333C55.9709 16.8333 59.3375 18.0958 61.8625 20.2C66.9125 25.6708 66.9125 33.2458 62.2834 38.2958ZM82.4834 29.8791C82.4834 33.2458 81.6417 36.1916 80.8 39.5583C85.0084 44.6083 85.0084 52.1833 80.3792 56.8125L68.5959 68.5958L62.2834 62.2833L50.5 74.0666C45.0292 79.5375 37.4542 82.4833 30.3 82.4833C31.1417 83.7458 31.9834 85.0083 33.2458 86.2708C41.6625 94.6875 54.7084 94.6875 63.125 86.2708L87.1125 62.2833C95.5292 53.8666 95.5292 40.8208 87.1125 32.4041C85.0084 31.5625 83.7459 30.7208 82.4834 29.8791Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="text-white">
+                <h5 class="text-xl font-bold">Tawuran</h5>
+                <p class="text-xl">Kenaikan hingga 31,45%</p>
+              </div>
+            </div>
+          </div>
+
+          <canvas
+            id="mychart"
+            class="my-5 border md:container md:mx-20 md:py-5"
+          ></canvas>
         </div>
       </div>
     </section>
@@ -1264,6 +1451,40 @@
         const scrollOffset = (cardWidth - containerWidth) / 2;
 
         card.scrollIntoView({ behavior: "smooth", inline: "center" });
+      }
+
+      //accordion
+      function toggleAccordion(button) {
+        const accordionItem = button.closest(".accordion-item");
+        const content = accordionItem.querySelector(".accordion-content");
+        const plusIcon = button.querySelector(".plus-icon");
+        const minusIcon = button.querySelector(".minus-icon");
+        const allAccordionItems = document.querySelectorAll(".accordion-item");
+
+        allAccordionItems.forEach((item) => {
+          if (item !== accordionItem && item.classList.contains("open")) {
+            const activeButton = item.querySelector(".accordion-title");
+            activeButton.classList.remove("bg-primary-300"); // Mengembalikan opasitas tombol yang tidak diklik
+            item.classList.remove("open");
+            item.querySelector(".accordion-content").classList.add("hidden");
+            item.querySelector(".plus-icon").classList.remove("hidden");
+            item.querySelector(".minus-icon").classList.add("hidden");
+          }
+        });
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          accordionItem.classList.add("open");
+          plusIcon.classList.add("hidden");
+          minusIcon.classList.remove("hidden");
+          button.classList.add("bg-primary-300"); // Mengurangi opasitas tombol yang diklik
+        } else {
+          content.classList.add("hidden");
+          accordionItem.classList.remove("open");
+          plusIcon.classList.remove("hidden");
+          minusIcon.classList.add("hidden");
+          button.classList.remove("bg-primary-300"); // Mengembalikan opasitas tombol yang tidak diklik
+        }
       }
     </script>
   </body>

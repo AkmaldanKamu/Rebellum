@@ -37,7 +37,6 @@ loader.load(celurit, (gltf) => {
     gltf.scene.rotation.z = Math.PI / 8
     scene.add(gltf.scene)
 })
-console.log(loader);
 
 const orbit = new OrbitControls(camera, canvas);
 orbit.enablePan = false

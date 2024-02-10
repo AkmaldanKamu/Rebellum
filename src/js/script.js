@@ -1,16 +1,18 @@
-import 'flowbite';
-import { Accordion } from 'flowbite';
-import Typed from 'typed.js';
-import './accordion';
-import './chart'
-import './three'
-import './gsap'
+import "flowbite";
+import Typed from "typed.js";
+import "./chart";
+import "./three";
+import "./gsap";
 
 const indonesia = new Typed(".indonesia", {
   strings: ["di Indonesia"],
   typeSpeed: 60,
   showCursor: false,
   startDelay: 500,
+  onComplete: (self) => {
+    const typed = document.querySelector(".indonesia");
+    typed.classList.add("bg-yellow", "text-white");
+  },
 });
 
 window.onscroll = () => {

@@ -30,7 +30,7 @@
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
-            class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
             aria-controls="navbar-dropdown"
             aria-expanded="false"
           >
@@ -1283,7 +1283,7 @@
     <!-- pengaruh section end -->
 
     <!-- data section start -->
-    <section id="data">
+    <section id="data" class="pb-[600px] md:pb-[1000px]">
       <div class="relative overflow-hidden pt-48">
         <img
           src="./assets/city2.png"
@@ -1480,14 +1480,47 @@
             Persentase Data dalam <span class="text-yellow">Bentuk Grafik</span>
           </h1>
 
-          <canvas
-            id="mychart"
-            class="my-5 border md:container md:mx-20 md:py-5"
-          ></canvas>
+          <div class="w-full">
+            <canvas
+              id="mychart"
+              class="my-5 mb-[600px] h-max border md:container md:mx-20 md:py-5"
+            ></canvas>
+          </div>
         </div>
       </div>
     </section>
     <!-- data section end -->
+
+    <!-- team section start -->
+    <section id="team">
+      <div class="container">
+        <h1
+          class="text-center font-radioCasnada text-3xl font-semibold md:text-4xl"
+        >
+          Tim <span class="text-yellow">kami</span>
+        </h1>
+        <p class="text-center text-base text-secondary-200">
+          Hindari kenakalan remaja bersama
+          <span class="font-bold">Rebellum!</span>
+        </p>
+
+        <div class="mt-8">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="title">FLIP CARD</p>
+                <p>Hover Me</p>
+              </div>
+              <div class="flip-card-back">
+                <p class="title">BACK</p>
+                <p>Leave Me</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team section end -->
 
     <script type="module" src="./js/script.js"></script>
     <script>

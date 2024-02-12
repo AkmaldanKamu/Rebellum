@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Radio+Canada&display=swap");
+@import url("./sweeper.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -59,71 +60,31 @@ body::-webkit-scrollbar-thumb {
 }
 /* css konsultasi */
 #konsultasi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @apply flex flex-col items-center justify-center;
 }
 
 .backg {
-  background-image: url('../assets/konsultasi/Rectangle87.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 90%;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin-right: 200px;
+  @apply relative mr-[200px] flex w-[90%] bg-[url("../assets/konsultasi/Rectangle87.png")] bg-cover bg-center bg-no-repeat p-8;
 }
 
 .text_konsultasi {
-  color: #ffffff;
-  max-width: 70%;
-  margin-left: 20px;
+  @apply ml-5 max-w-[70%] text-white;
 }
 
 .input_konsultasi {
-  width: 100%;
-  margin-bottom: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  border-radius: 200px;
-  margin-top:20px;
-  color:#000;
-
+  @apply mb-1 mt-5 w-full rounded-[200px] p-[10] text-lg text-black;
 }
 
 .input-group {
-  margin-top: 20px;
+  @apply mt-5;
 }
 
 .btn_konsultasi {
-  border: none;
-  border-radius: 15px;
-  padding: 12px 24px;
-  background-color: #F89B11;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 18px;
-}
-
-.btn_konsultasi:hover {
-  background-color: #FFAC2F;
+  @apply cursor-pointer rounded-[15px] bg-yellow px-6 py-3 text-lg transition duration-300 ease-linear hover:bg-[#ffac2f];
 }
 
 .vektor_konseling {
-  max-width: 50%;
-  height: auto;
-  position: absolute;
-  top: 49%;
-  right: -160px;
-  transform: translateY(-53%);
-  z-index:1;
-
+  @apply absolute -right-[160px] top-[49%] z-10 h-auto max-w-[50%] -translate-y-[53%];
 }
 
 @media screen and (max-width: 768px) {
@@ -132,8 +93,8 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     flex-direction: column;
     align-items: center;
-    margin-left:200px ;
-    margin-top:10vh;
+    margin-left: 200px;
+    margin-top: 10vh;
   }
 
   .vektor_konseling {
@@ -147,24 +108,22 @@ body::-webkit-scrollbar-thumb {
   .text_konsultasi {
     max-width: 100%;
     margin-left: 0;
-    margin-top:-35vh;
+    margin-top: -35vh;
     font-size: 11px;
   }
 
-  .input_konsultasi{
-    font-size:14px;
+  .input_konsultasi {
+    font-size: 14px;
   }
 }
 /* css close konsultasi */
-
-
 
 .line {
   @apply absolute -bottom-1 left-0 -z-[99] h-2 w-0 bg-yellow;
 }
 
 .flip-card {
-  @apply h-64 w-48 bg-transparent;
+  @apply h-80 w-56 bg-transparent;
   perspective: 1000px;
 }
 
@@ -183,7 +142,7 @@ body::-webkit-scrollbar-thumb {
 
 .flip-card-front,
 .flip-card-back {
-  @apply absolute flex h-full w-full flex-col justify-center rounded-2xl border border-primary-200 shadow-lg;
+  @apply absolute h-full w-full rounded-2xl border border-primary-200 shadow-lg;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -196,5 +155,3 @@ body::-webkit-scrollbar-thumb {
   @apply bg-yellow text-white;
   transform: rotateY(180deg);
 }
-
-

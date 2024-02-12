@@ -1,5 +1,7 @@
 import "flowbite";
 import Typed from "typed.js";
+import 'ionicons';
+import './sweeper';
 import "./chart";
 import "./three";
 import "./gsap";

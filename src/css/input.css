@@ -57,6 +57,107 @@ body::-webkit-scrollbar-thumb {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
+/* css konsultasi */
+#konsultasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backg {
+  background-image: url('../assets/konsultasi/Rectangle87.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-right: 200px;
+}
+
+.text_konsultasi {
+  color: #ffffff;
+  max-width: 70%;
+  margin-left: 20px;
+}
+
+.input_konsultasi {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 200px;
+  margin-top:20px;
+  color:#000;
+
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.btn_konsultasi {
+  border: none;
+  border-radius: 15px;
+  padding: 12px 24px;
+  background-color: #F89B11;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.btn_konsultasi:hover {
+  background-color: #FFAC2F;
+}
+
+.vektor_konseling {
+  max-width: 50%;
+  height: auto;
+  position: absolute;
+  top: 49%;
+  right: -160px;
+  transform: translateY(-53%);
+  z-index:1;
+
+}
+
+@media screen and (max-width: 768px) {
+  .backg {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-left:200px ;
+    margin-top:10vh;
+  }
+
+  .vektor_konseling {
+    position: static;
+    top: auto;
+    margin-bottom: 20px;
+    right: auto;
+    max-width: 100%;
+  }
+
+  .text_konsultasi {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top:-35vh;
+    font-size: 11px;
+  }
+
+  .input_konsultasi{
+    font-size:14px;
+  }
+}
+/* css close konsultasi */
+
+
 
 .line {
   @apply absolute -bottom-1 left-0 -z-[99] h-2 w-0 bg-yellow;
@@ -95,3 +196,5 @@ body::-webkit-scrollbar-thumb {
   @apply bg-yellow text-white;
   transform: rotateY(180deg);
 }
+
+

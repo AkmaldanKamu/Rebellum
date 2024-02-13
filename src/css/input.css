@@ -38,20 +38,6 @@ body {
   --sb-size: 5px;
 }
 
-body::-webkit-scrollbar {
-  width: var(--sb-size);
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-  border-radius: 3px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-  border-radius: 3px;
-}
-
 @supports not selector(::-webkit-scrollbar) {
   body {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
@@ -112,27 +98,23 @@ body::-webkit-scrollbar-thumb {
     text-align: start;
   }
 
-  .text_konsultasi h1{
+  .text_konsultasi h1 {
     font-size: 20px;
     padding: 0px;
     margin-top: -20px;
     line-height: 25px;
-    
   }
 
-  .text_konsultasi p{
+  .text_konsultasi p {
     font-size: 14px;
     line-height: 20px;
     margin-top: 20px;
-    
   }
 
   .input_konsultasi {
     font-size: 14px;
     margin-top: 10px;
     text-align: center;
-    
-    
   }
 }
 /* css close konsultasi */
@@ -142,8 +124,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flip-card {
-  @apply h-80 w-56 bg-transparent;
+  @apply h-80 w-56 scale-75 bg-transparent md:scale-100;
   perspective: 1000px;
+}
+
+.swiper-slide-active .flip-card-front {
+  @apply border border-primary-200;
 }
 
 .title {
@@ -161,13 +147,13 @@ body::-webkit-scrollbar-thumb {
 
 .flip-card-front,
 .flip-card-back {
-  @apply absolute h-full w-full rounded-2xl border border-primary-200 shadow-lg;
+  @apply absolute h-full w-full rounded-2xl border shadow-lg;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
-  @apply bg-primary-200 text-white;
+  @apply bg-white text-black shadow-xl;
 }
 
 .flip-card-back {

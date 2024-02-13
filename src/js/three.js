@@ -32,7 +32,7 @@ ambientLight.intensity = 15;
 scene.add(ambientLight)
 
 const loader = new GLTFLoader();
-loader.load(celurit, (gltf) => {
+loader.load('/celurit.gltf', (gltf) => {
     gltf.scene.scale.set(10, 10, 10)
     gltf.scene.rotation.z = Math.PI / 8
     scene.add(gltf.scene)

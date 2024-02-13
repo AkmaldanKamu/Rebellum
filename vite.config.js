@@ -9,5 +9,6 @@ export default defineConfig({
         emptyOutDir: true,
         chunkSizeWarningLimit: 1600,
         sourcemap: false
-    }
+    },
+    publicDir: './assets/celurit'
 })

@@ -58,19 +58,60 @@ const celurit2 = new Promise((resolve, reject) => {
 const botol = new Promise((resolve, reject) => {
     loader.load('/botol.glb', (gltf) => {
         gltf.scene.scale.set(30, 30, 30)
-        gltf.scene.rotation.z = Math.PI / 6
-        gltf.scene.rotation.y = Math.PI
+        gltf.scene.position.set(-25, 0, -5)
+        gltf.scene.rotation.z = Math.PI / 8
+        scene.add(gltf.scene)
+        resolve(gltf.scene);
+    })
+})
+const botol2 = new Promise((resolve, reject) => {
+    loader.load('/botol.glb', (gltf) => {
+        gltf.scene.scale.set(30, 30, 30)
+        gltf.scene.position.set(45, 10, 10)
+        gltf.scene.rotation.z = Math.PI / -6
+        scene.add(gltf.scene)
+        resolve(gltf.scene);
+    })
+})
+const obat = new Promise((resolve, reject) => {
+    loader.load('/obat.glb', (gltf) => {
+        gltf.scene.scale.set(10, 10, 10)
+        gltf.scene.position.set(40, -30, -5)
+        gltf.scene.rotation.y = Math.PI / 2
+        gltf.scene.rotation.z = Math.PI / 4
+        scene.add(gltf.scene)
+        resolve(gltf.scene);
+    })
+})
+const kapsul = new Promise((resolve, reject) => {
+    loader.load('/kapsul.glb', (gltf) => {
+        gltf.scene.scale.set(5, 5, 5)
+        gltf.scene.position.set(20, 0, -10)
+        gltf.scene.rotation.z = Math.PI / 8
+        scene.add(gltf.scene)
+        resolve(gltf.scene);
+    })
+})
+const kapsul2 = new Promise((resolve, reject) => {
+    loader.load('/kapsul.glb', (gltf) => {
+        gltf.scene.scale.set(5, 5, 5)
+        gltf.scene.position.set(-35, -25, 10)
+        gltf.scene.rotation.z = Math.PI / -4
         scene.add(gltf.scene)
         resolve(gltf.scene);
     })
 })
 
-Promise.all([celurit1, celurit2, botol]).then(([celurit1, celurit2, botol]) => {
+Promise.all([celurit1, celurit2, botol, botol2, obat, kapsul, kapsul2]).then(([celurit1, celurit2, botol, botol2, obat, kapsul, kapsul2]) => {
     // Kedua model telah dimuat
     // Mulai animasi rotasi untuk kedua model di sini
-    animateRotation(celurit1);
-    animateRotation(celurit2);
-    animateRotation(botol);
+    mutar(celurit1)
+    mutar(celurit2)
+    animateRotation(botol, 500);
+    animateRotation(botol2, 700);
+    animateRotation(obat);
+    animateRotation(kapsul);
+    animateRotation(kapsul2, 1100);
 });
 
 const orbit = new OrbitControls(camera, canvas);
@@ -78,10 +119,22 @@ orbit.enablePan = false
 orbit.enableZoom = false
 orbit.update();
 
-function animateRotation(object) {
+function animateRotation(object, speed = 1000) {
+    const initialY = object.position.y;
+    function animate() {
+        requestAnimationFrame(animate);
+        // object.rotation.y += Math.PI / 270;
+        object.position.y = initialY + Math.sin(performance.now() / speed) * 5;
+        object.position
+        renderer.render(scene, camera);
+    }
+    animate();
+}
+function mutar(object) {
     function animate() {
         requestAnimationFrame(animate);
         object.rotation.y += Math.PI / 270;
+        object.position
         renderer.render(scene, camera);
     }
     animate();

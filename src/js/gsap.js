@@ -80,4 +80,16 @@ if (window.innerWidth > 768) {
     x: "100vh",
     yoyoEase: true,
   })
+
+  ScrollTrigger.create({
+    trigger: "#data-children",
+    start: "top bottom",
+    end: "bottom bottom",
+    onEnter: () => {
+      gsap.from("#data-children", {
+        y: "300",
+        duration: 1,
+      })
+    },
+  })
 }

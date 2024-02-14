@@ -9,13 +9,6 @@ let tawuran = [
   { year: "2020 - 2022", kasus: 16.55 },
 ];
 
-window.onscroll = () => {
-  if (window.scrollY > chartHTML.offsetTop) {
-    console.log('melewati');
-  }
-}
-
-
 const updateChart = () => {
   // Perbarui data grafik dengan data baru
   myChart.data.labels = tawuran.map((row) => row.year);

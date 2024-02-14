@@ -9,8 +9,6 @@ const renderer = new THREE.WebGLRenderer({
     alpha: true
 });
 
-console.dir(canvas);
-
 const width = canvas.clientWidth;
 const height = canvas.clientHeight;
 renderer.setSize(width, height, true);
@@ -66,6 +64,12 @@ const botol = new Promise((resolve, reject) => {
 })
 const botol2 = new Promise((resolve, reject) => {
     loader.load('/botol.glb', (gltf) => {
+        gltf.scene.traverse(function (child) {
+            if (child.isMesh) {
+                // Atur bahan untuk setiap mesh
+                child.castShadow = true;
+            }
+        });
         gltf.scene.scale.set(30, 30, 30)
         gltf.scene.position.set(45, 10, 10)
         gltf.scene.rotation.z = Math.PI / -6
@@ -73,6 +77,7 @@ const botol2 = new Promise((resolve, reject) => {
         resolve(gltf.scene);
     })
 })
+
 const obat = new Promise((resolve, reject) => {
     loader.load('/obat.glb', (gltf) => {
         gltf.scene.scale.set(10, 10, 10)
@@ -102,7 +107,10 @@ const kapsul2 = new Promise((resolve, reject) => {
     })
 })
 
+const loading = document.getElementById('loading');
+loading.style.display = 'flex';
 Promise.all([celurit1, celurit2, botol, botol2, obat, kapsul, kapsul2]).then(([celurit1, celurit2, botol, botol2, obat, kapsul, kapsul2]) => {
+    loading.style.display = 'none';
     // Kedua model telah dimuat
     // Mulai animasi rotasi untuk kedua model di sini
     mutar(celurit1)

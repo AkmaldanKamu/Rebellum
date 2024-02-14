@@ -27,14 +27,14 @@ tl.to(
   0,
 ); // Add the animation at the start of the timeline
 
-gsap.to(".pesawat", {
+gsap.fromTo(".pesawat", { right: '-30%' }, {
   scrollTrigger: {
     trigger: "#pengaruh",
     start: "top bottom",
-    end: "bottom top",
+    end: "bottom bottom",
     scrub: true,
   },
-  x: "-100vh",
+  right: '100%',
   yoyoEase: true,
 });
 
@@ -81,15 +81,15 @@ if (window.innerWidth > 768) {
     yoyoEase: true,
   })
 
-  ScrollTrigger.create({
-    trigger: "#data-children",
-    start: "top bottom",
-    end: "bottom bottom",
-    onEnter: () => {
-      gsap.from("#data-children", {
-        y: "300",
-        duration: 1,
-      })
-    },
-  })
 }
+ScrollTrigger.create({
+  trigger: "#data-children",
+  start: "top bottom",
+  end: "bottom center",
+  onEnter: () => {
+    gsap.from("#data-children", {
+      y: "300",
+      duration: 1,
+    })
+  },
+})

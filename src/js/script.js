@@ -1,12 +1,11 @@
 import "flowbite";
 import Typed from "typed.js";
+import Aos from "aos";
 import 'ionicons';
 import './sweeper';
 import "./chart";
 import "./three";
 import "./gsap";
-import Aos from "aos";
-import 'aos/dist/aos.css';
 
 Aos.init({
   mirror: false,

@@ -9,9 +9,11 @@ const renderer = new THREE.WebGLRenderer({
     alpha: true
 });
 
-const width = 500;
-const height = 300;
-renderer.setSize(width, height);
+console.dir(canvas);
+
+const width = canvas.clientWidth;
+const height = canvas.clientHeight;
+renderer.setSize(width, height, true);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 const composer = new EffectComposer(renderer);
@@ -53,12 +55,22 @@ const celurit2 = new Promise((resolve, reject) => {
         resolve(gltf.scene);
     })
 })
+const botol = new Promise((resolve, reject) => {
+    loader.load('/botol.glb', (gltf) => {
+        gltf.scene.scale.set(30, 30, 30)
+        gltf.scene.rotation.z = Math.PI / 6
+        gltf.scene.rotation.y = Math.PI
+        scene.add(gltf.scene)
+        resolve(gltf.scene);
+    })
+})
 
-Promise.all([celurit1, celurit2]).then(([celurit1, celurit2]) => {
+Promise.all([celurit1, celurit2, botol]).then(([celurit1, celurit2, botol]) => {
     // Kedua model telah dimuat
     // Mulai animasi rotasi untuk kedua model di sini
     animateRotation(celurit1);
     animateRotation(celurit2);
+    animateRotation(botol);
 });
 
 const orbit = new OrbitControls(camera, canvas);

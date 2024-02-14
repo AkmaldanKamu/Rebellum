@@ -5,6 +5,12 @@ import './sweeper';
 import "./chart";
 import "./three";
 import "./gsap";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
+Aos.init({
+  mirror: false,
+});
 
 const indonesia = new Typed(".indonesia", {
   strings: ["di Indonesia"],
@@ -46,5 +52,6 @@ window.onscroll = () => {
     } else {
       header.classList.remove("navbar-fixed");
     }
+
   });
 };

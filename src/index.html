@@ -141,7 +141,10 @@
               alt="lingkaran blur"
               class="h-auto w-[390px] align-middle"
             /> -->
-            <canvas id="canvas" class="h-[300px] w-[300px]"></canvas>
+            <canvas
+              id="canvas"
+              class="h-[300px] w-[300px] border md:w-[500px]"
+            ></canvas>
           </div>
         </div>
       </div>
@@ -161,7 +164,7 @@
             <div class="mt-10 w-full">
               <div class="accordion flex flex-col">
                 <!-- accordion-1 -->
-                <div class="accordion-item my-2">
+                <div class="accordion-item my-2" data-aos="fade-up">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -205,7 +208,7 @@
                   </div>
                 </div>
                 <!-- accordion-2 -->
-                <div class="accordion-item my-2">
+                <div class="accordion-item my-2" data-aos="fade-up">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -248,7 +251,7 @@
                   </div>
                 </div>
                 <!-- accordion-3 -->
-                <div class="accordion-item my-2">
+                <div class="accordion-item my-2" data-aos="fade-up">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -293,7 +296,7 @@
                   </div>
                 </div>
                 <!-- accordion-4 -->
-                <div class="accordion-item my-2">
+                <div class="accordion-item my-2" data-aos="fade-up">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -335,7 +338,7 @@
                   </div>
                 </div>
                 <!-- accordion-5 -->
-                <div class="accordion-item my-2">
+                <div class="accordion-item my-2" data-aos="fade-up">
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -433,12 +436,12 @@
           >
             <button
               onclick="scrollToCard(1)"
-              class="flex flex-col items-center rounded-l-2xl border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="flex flex-col items-center rounded-l-2xl border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/tawuran.svg"
                 alt
-                class="h-auto w-[50px] md:w-[100px]"
+                class="h-auto w-[75px] md:w-[100px]"
               />
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
@@ -448,12 +451,12 @@
             </button>
             <button
               onclick="scrollToCard(2)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/narkoba.svg"
                 alt
-                class="h-auto w-[50px] md:w-[100px]"
+                class="h-auto w-[75px] md:w-[100px]"
               />
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
@@ -463,12 +466,12 @@
             </button>
             <button
               onclick="scrollToCard(3)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/rokok.svg"
                 alt
-                class="h-auto w-[50px] md:w-[100px]"
+                class="h-auto w-[75px] md:w-[100px]"
               />
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
@@ -478,12 +481,12 @@
             </button>
             <button
               onclick="scrollToCard(4)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/seksual.svg"
                 alt
-                class="h-auto w-[50px] md:w-[100px]"
+                class="h-auto w-[75px] md:w-[100px]"
               />
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
@@ -493,27 +496,27 @@
             </button>
             <button
               onclick="scrollToCard(5)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/bully.svg"
                 alt
-                class="h-auto w-[50px] md:w-[100px]"
+                class="h-auto w-[75px] md:w-[100px]"
               />
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
               >
-                Perundungan
+                bullying
               </p>
             </button>
             <button
               onclick="scrollToCard(6)"
-              class="flex flex-col items-center rounded-r-2xl border-primary-200 px-5 py-4 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-10 md:py-5"
+              class="flex flex-col items-center rounded-r-2xl border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/miras.svg"
                 alt
-                class="h-auto w-[50px] md:w-[100px]"
+                class="h-auto w-[75px] md:w-[100px]"
               />
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
@@ -721,6 +724,7 @@
         <div class="mt-8 flex flex-wrap justify-evenly gap-10">
           <!-- card 1 -->
           <div
+            id="dampak"
             class="w-full rounded-lg border px-5 py-5 shadow-lg md:w-[400px]"
           >
             <h2 class="mb-5 text-center text-2xl font-semibold">
@@ -1442,7 +1446,7 @@
             <!-- card 1 -->
             <button
               id="tawuran"
-              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90 md:w-fit"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
               <div
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
@@ -1463,13 +1467,13 @@
 
               <div class="text-start text-white">
                 <h5 class="text-xs font-bold md:text-xl">Tawuran</h5>
-                <p class="text-xs md:text-xl">Kenaikan hingga 31,45%</p>
+                <p class="text-xs md:text-lg">Kenaikan hingga 31,45%</p>
               </div>
             </button>
             <!-- card 2 -->
             <div
               id="narkoba"
-              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:opacity-90 md:w-fit"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
               <div
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
@@ -1496,7 +1500,7 @@
             <!-- card 3 -->
             <div
               id="merokok"
-              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:opacity-90 md:w-fit"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
               <div
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
@@ -1523,7 +1527,7 @@
             <!-- card 4 -->
             <div
               id="seksual"
-              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:opacity-90 md:w-fit"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
               <div
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
@@ -1550,7 +1554,7 @@
             <!-- card 5 -->
             <div
               id="perundungan"
-              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:opacity-90 md:w-fit"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
               <div
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
@@ -1577,7 +1581,7 @@
             <!-- card 6 -->
             <div
               id="minumanKeras"
-              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:opacity-90 md:w-fit"
+              class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
               <div
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
@@ -1623,8 +1627,10 @@
       <div class="backg flex justify-between p-0">
         <img src="assets/konsultasi/Vector.png" alt class="vektor_konseling" />
         <div class="text_konsultasi">
-          <h1 class="text-4xl">Hindari kenakalan, ceritakan pada kami!</h1>
-          <p class="text-2xl">
+          <h1 class="mb-1 text-2xl font-bold">
+            Hindari kenakalan, ceritakan pada kami!
+          </h1>
+          <p class="text-base">
             Kami memiliki layanan untuk bisa berkonsultasi dengan kami, kami tim
             Rebellum akan selalu memberikan saran dan bimbingan kepadamu!
             Masukkan nama dan nomor kamu dengan benar!
@@ -1791,7 +1797,9 @@
                         <h1 class="text-center text-base font-bold">
                           Reynaldo Yusellino
                         </h1>
-                        <p class="text-center text-sm">Programmer</p>
+                        <p class="text-center text-sm">
+                          Programmer, 3D designer
+                        </p>
                       </div>
 
                       <div

@@ -1,7 +1,7 @@
 import Swiper from "swiper/bundle";
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.team', {
     effect: 'coverflow',
     loop: true,
     grabCursor: true,
@@ -21,14 +21,23 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true
     },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 
+const quotes = new Swiper('.quotes', {
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+    }
+})
+
+
+if (window.innerWidth < 768) {
+    quotes.params.slidesPerView = 1;
+}
 
 // let TrandingSlider = new Swiper('.tranding-slider', {
 //     effect: 'coverflow',

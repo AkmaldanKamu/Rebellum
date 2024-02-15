@@ -9,12 +9,12 @@
 
   <body>
     <!-- loader section start -->
-    <div
+    <!-- <div
       id="loader"
       class="fixed z-[999999] flex h-screen w-screen flex-col items-center justify-center bg-white transition-opacity"
     >
       <div class="spinner z-[9999]"></div>
-    </div>
+    </div> -->
     <!-- loader section end -->
 
     <!-- navbar section start-->
@@ -1647,6 +1647,11 @@
             placeholder="Masukan Keluhan Anda"
             class="input_konsultasi"
           />
+          <input
+            type="text"
+            placeholder="Masukan Keluhan Anda"
+            class="input_konsultasi"
+          />
           <div class="input-group">
             <input type="button" value="Kirim" class="btn_konsultasi" />
           </div>
@@ -1962,90 +1967,6 @@
     </section>
     <!-- team section end -->
 
-    <!-- quotes section start -->
-    <section id="quotes" class="pb-32 md:pb-72 md:pt-60">
-      <div class="relative flex flex-col items-center md:flex-row">
-        <div class="mb-10 block w-full md:hidden">
-          <h1
-            class="relative text-center font-radioCasnada text-3xl font-bold text-black"
-          >
-            Quote
-          </h1>
-          <p class="mx-5 text-center text-base text-secondary-200">
-            Kata-kata motivasi untuk kamu! Agar terhindar dari kenakalan remaja.
-          </p>
-        </div>
-        <div
-          class="z-10 mx-auto w-[300px] max-w-screen-xl md:absolute md:w-[75%]"
-        >
-          <!-- Slider main container -->
-          <div class="swiper quotes">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide scale-50 md:scale-100">
-                <div
-                  class="w-[300px] rounded-3xl bg-primary-300 p-4 text-white md:w-[530px] md:p-8"
-                >
-                  <img src="./assets/backtick.svg" />
-
-                  <p class="text-base">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.”
-                  </p>
-                  <p class="mt-5 text-base">- Ramadina</p>
-                </div>
-              </div>
-              <div class="swiper-slide scale-50 md:scale-100">
-                <div
-                  class="w-[300px] rounded-3xl bg-primary-300 p-4 text-white md:w-[530px] md:p-8"
-                >
-                  <img src="./assets/backtick.svg" />
-
-                  <p class="text-base">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.”
-                  </p>
-                  <p class="mt-5 text-base">- Ramadina</p>
-                </div>
-              </div>
-              <div class="swiper-slide scale-50 md:scale-100">
-                <div
-                  class="w-[300px] rounded-3xl bg-primary-300 p-4 text-white md:w-[530px] md:p-8"
-                >
-                  <img src="./assets/backtick.svg" />
-
-                  <p class="text-base">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.”
-                  </p>
-                  <p class="mt-5 text-base">- Ramadina</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="mt-5 flex justify-center gap-5">
-              <button
-                class="prev flex h-[50px] w-[50px] items-center justify-center rounded-full border border-primary-200 p-1 text-primary-200 focus:bg-primary-200 focus:text-white"
-              >
-                <ion-icon name="chevron-back-outline"></ion-icon>
-              </button>
-              <button
-                class="next flex h-[50px] w-[50px] items-center justify-center rounded-full border border-primary-200 p-1 text-primary-200 focus:bg-primary-200 focus:text-white"
-              >
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- quotes section end -->
-
     <!-- footer section start -->
     <footer class="bg-gray-900">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -2256,6 +2177,7 @@
 
         card.scrollIntoView({ behavior: "smooth", inline: "center" });
       }
+      scrollToCard(1);
 
       //accordion
       function toggleAccordion(button) {

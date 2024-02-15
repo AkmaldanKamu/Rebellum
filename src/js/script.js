@@ -11,6 +11,17 @@ Aos.init({
   mirror: false,
 });
 
+const loader = document.getElementById('spinner')
+
+window.onload = function () {
+  window.setTimeout(fadeout, 500);
+}
+
+function fadeout() {
+  loader.style.display = '0';
+  loader.style.display = 'none';
+}
+
 const indonesia = new Typed(".indonesia", {
   strings: ["di Indonesia"],
   typeSpeed: 60,

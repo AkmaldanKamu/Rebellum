@@ -12,17 +12,17 @@ Aos.init({
 });
 
 
-window.onload = () => {
-  window.setTimeout(fadeout, 100);
-}
+// window.onload = () => {
+//   window.setTimeout(fadeout, 100);
+// }
 
-function fadeout() {
-  const loader = document.getElementById('loader')
-  loader.style.opacity = '0';
-  setTimeout(() => {
-    loader.style.display = 'none'; 
-  }, 100);
-}
+// function fadeout() {
+//   const loader = document.getElementById('loader')
+//   loader.style.opacity = '0';
+//   setTimeout(() => {
+//     loader.style.display = 'none'; 
+//   }, 100);
+// }
 
 const indonesia = new Typed(".indonesia", {
   strings: ["di Indonesia"],

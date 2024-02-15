@@ -22,27 +22,3 @@ const swiper = new Swiper('.team', {
         clickable: true
     },
 });
-
-const quotes = new Swiper('.quotes', {
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 2,
-    spaceBetween: 50,
-    navigation: {
-        nextEl: '.next',
-        prevEl: '.prev',
-    }
-})
-
-function adjustSlidesPerView() {
-    if (window.innerWidth < 768) {
-        quotes.params.slidesPerView = 1;
-    } else {
-        quotes.params.slidesPerView = 2;
-    }
-    quotes.update();
-}
-
-adjustSlidesPerView();
-
-window.addEventListener('resize', adjustSlidesPerView);

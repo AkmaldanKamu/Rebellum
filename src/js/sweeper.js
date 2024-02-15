@@ -14,17 +14,11 @@ const swiper = new Swiper('.team', {
 
   coverflowEffect: {
     rotate: 0,
-    stretch: -10,
+    stretch: -20,
     depth: 100,
     modifier: 2.5,
   },
 
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',

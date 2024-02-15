@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebellum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/png" href="./assets/rebellum-icon.png" />
     <link rel="stylesheet" href="./css/input.css" />
   </head>
@@ -30,7 +32,7 @@
             <img
               src="./assets/rebellum-icon-text.png"
               class="h-auto w-[150px]"
-              alt="Flowbite Logo"
+              alt="gambar logo"
             />
           </a>
           <button
@@ -738,6 +740,7 @@
         </div>
       </div>
       <img
+        alt="wave"
         src="./assets/wave-triangle.png"
         class="m-auto -mt-1 flex h-auto w-full"
         style="-webkit-user-drag: none"
@@ -1463,7 +1466,8 @@
       <div class="relative overflow-hidden pt-48">
         <img
           src="./assets/city2.png"
-          alt
+          alt="city"
+          loading="lazy"
           class="city relative -left-60 bottom-20 -z-10 -mt-5 scale-150 md:w-full md:scale-[1.7]"
         />
       </div>
@@ -1687,8 +1691,9 @@
                   <div class="flip-card-front">
                     <div class="px-2 py-3">
                       <img
+                        alt="team image"
                         src="./assets/team/salman.jpg"
-                        class="mx-auto h-[165px] w-full self-start rounded-md object-cover"
+                        class="mx-auto h-[165px] w-auto self-start rounded-md object-cover"
                       />
                       <div class="my-4">
                         <h1 class="text-center text-base font-bold">
@@ -1743,8 +1748,9 @@
                   <div class="flip-card-front">
                     <div class="px-2 py-3">
                       <img
+                        alt="team image"
                         src="./assets/team/nazla.jpg"
-                        class="mx-auto h-[165px] w-full self-start rounded-md object-cover"
+                        class="mx-auto h-[165px] w-auto self-start rounded-md object-cover"
                       />
                       <div class="my-4">
                         <h1 class="text-center text-base font-bold">
@@ -1799,8 +1805,9 @@
                   <div class="flip-card-front">
                     <div class="px-2 py-3">
                       <img
+                        alt="team image"
                         src="./assets/team/aldo.jpg"
-                        class="mx-auto h-[165px] w-full self-start rounded-md object-cover"
+                        class="mx-auto h-[165px] w-auto self-start rounded-md object-cover"
                       />
                       <div class="my-4">
                         <h1 class="text-center text-base font-bold">
@@ -1857,8 +1864,9 @@
                   <div class="flip-card-front">
                     <div class="px-2 py-3">
                       <img
+                        alt="team image"
                         src="./assets/team/rama.jpg"
-                        class="mx-auto h-[165px] w-full self-start rounded-md object-cover"
+                        class="mx-auto h-[165px] w-auto self-start rounded-md object-cover"
                       />
                       <div class="my-4">
                         <h1 class="text-center text-base font-bold">
@@ -1913,8 +1921,9 @@
                   <div class="flip-card-front">
                     <div class="px-2 py-3">
                       <img
+                        alt="team image"
                         src="./assets/team/akmal.jpg"
-                        class="mx-auto h-[165px] w-full self-start rounded-md object-cover"
+                        class="mx-auto h-[165px] w-auto self-start rounded-md object-cover"
                       />
                       <div class="my-4">
                         <h1 class="text-center text-base font-bold">
@@ -1984,10 +1993,10 @@
     <!-- team section end -->
 
     <!-- footer section start -->
-    <footer class="bg-gray-900">
+    <footer class="bg-[#0D1133]">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
+          <div class="mb-6 flex flex-col justify-between md:mb-0">
             <a href="#home" class="flex items-center">
               <img
                 src="./assets/rebellum-icon-footer.png"
@@ -1995,13 +2004,33 @@
                 alt="FlowBite Logo"
               />
             </a>
+
+            <div class="mb-5 mt-5 md:mb-0">
+              <h2 class="mb-6 text-base font-semibold uppercase text-gray-400">
+                Hubungi Kami
+              </h2>
+              <ul class="font-medium text-gray-500">
+                <li class="mb-4 flex items-center gap-3 text-base">
+                  <ion-icon name="location"></ion-icon>
+                  <a href="#home" class="hover:underline"
+                    >SMK Negeri 46 Jakarta</a
+                  >
+                </li>
+                <li class="mb-4 flex items-center gap-3 text-base">
+                  <ion-icon name="mail"></ion-icon>
+                  <a href="#about" class="hover:underline"
+                    >Rebellum@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="grid grid-cols-3 gap-8 sm:gap-6">
             <div>
               <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">
                 Akses Konten
               </h2>
-              <ul class="font-medium text-gray-500 dark:text-gray-400">
+              <ul class="font-medium text-gray-500">
                 <li class="mb-4">
                   <a href="#home" class="hover:underline">Beranda</a>
                 </li>
@@ -2022,68 +2051,68 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">
-                Credit
-              </h2>
-              <ul class="font-medium text-gray-500 dark:text-gray-400">
-                <li class="mb-4">
-                  <a href="https://flowbite.com/" class="hover:underline"
-                    >Pinterest</a
-                  >
-                </li>
-                <li>
-                  <a href="https://tailwindcss.com/" class="hover:underline"
-                    >Freepik</a
-                  >
-                </li>
-              </ul>
-            </div>
+
             <div>
               <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">
                 Sumber Data
               </h2>
-              <ul class="font-medium text-gray-500 dark:text-gray-400">
+              <ul class="font-medium text-gray-500">
                 <li class="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    class="lowercase hover:underline"
+                  <a href="https://bnn.go.id" class="lowercase hover:underline"
                     >Bnn.go.id</a
                   >
                 </li>
                 <li class="mb-4">
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://Kemkes.go.id"
                     class="lowercase hover:underline"
                     >Kemkes.go.id
                   </a>
                 </li>
                 <li class="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    class="lowercase hover:underline"
+                  <a href="https://dpr.go.id" class="lowercase hover:underline"
                     >Dpr.go.id
                   </a>
                 </li>
                 <li class="mb-4">
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="hhttps://bappeda.jakarta.go.id/"
                     class="lowercase hover:underline"
                     >Bappeda
                   </a>
                 </li>
                 <li class="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    class="lowercase hover:underline"
+                  <a href="https://Bernas.id" class="lowercase hover:underline"
                     >Bernas.id
                   </a>
                 </li>
                 <li class="mb-4">
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    class="lowercase hover:underline"
+                  <a href="https://Tempo.co" class="lowercase hover:underline"
                     >Tempo.co
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">
+                Credit
+              </h2>
+              <ul class="font-medium text-gray-500">
+                <li class="mb-4">
+                  <a href="https://Pinterest.com/" class="hover:underline"
+                    >Pinterest</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="https://www.freepik.com/" class="hover:underline"
+                    >Freepik</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="https://skfb.ly/oLst6" class="hover:underline">
+                    <span class="block font-bold">Celurit by</span> M.Riv'an
+                    Fajar
                   </a>
                 </li>
               </ul>

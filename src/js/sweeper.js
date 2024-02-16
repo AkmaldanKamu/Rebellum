@@ -24,3 +24,17 @@ const swiper = new Swiper('.team', {
     prevEl: '.button-prev',
   },
 });
+
+const carousel = new Swiper('.carousel', {
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+});
+
+const buttons = document.querySelectorAll('.swiper-btn');
+buttons.forEach((button) => {
+  button.addEventListener('click', function () {
+    const slideIndex = parseInt(button.dataset.slide);
+    carousel.slideTo(slideIndex - 1);
+  });
+});

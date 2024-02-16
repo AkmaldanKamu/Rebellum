@@ -49,16 +49,16 @@ gsap.to(".city", {
   x: "400px",
 });
 
-gsap.from(".text_konsultasi", {
-  scrollTrigger: {
-    trigger: "#konsultasi",
-    start: "top bottom",
-    end: "bottom bottom",
-    scrub: true,
-  },
-  x: "-100vh",
-  yoyoEase: true,
-})
+// gsap.from(".text_konsultasi", {
+//   scrollTrigger: {
+//     trigger: "#konsultasi",
+//     start: "top bottom",
+//     end: "bottom bottom",
+//     scrub: true,
+//   },
+//   x: "-100vh",
+//   yoyoEase: true,
+// })
 if (window.innerWidth > 768) {
   gsap.from("#dampak", {
     scrollTrigger: {

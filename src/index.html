@@ -476,13 +476,13 @@
     <!-- carousel section start -->
     <section id="kasus" class="">
       <div class="relative bg-primary-100 pt-32">
-        <div class="container overflow-x-hidden">
+        <div class="overflow-x-hidden">
           <div
             class="absolute -top-10 left-1/2 grid w-full -translate-x-1/2 scale-95 grid-cols-6 rounded-2xl bg-primary-300 sm:w-[80%] md:-top-16 md:w-2/3 md:max-w-screen-md md:scale-100"
           >
             <button
-              onclick="scrollToCard(1)"
-              class="flex flex-col items-center rounded-l-2xl border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-7 md:py-5"
+            data-slide="1"
+              class="swiper-btn flex flex-col items-center rounded-l-2xl border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/tawuran.svg"
@@ -496,8 +496,8 @@
               </p>
             </button>
             <button
-              onclick="scrollToCard(2)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
+              data-slide="2"
+              class="swiper-btn flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/narkoba.svg"
@@ -511,8 +511,8 @@
               </p>
             </button>
             <button
-              onclick="scrollToCard(3)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
+            data-slide="3"
+              class="swiper-btn flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/rokok.svg"
@@ -526,8 +526,8 @@
               </p>
             </button>
             <button
-              onclick="scrollToCard(4)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
+            data-slide="4"
+              class="swiper-btn flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/seksual.svg"
@@ -541,8 +541,8 @@
               </p>
             </button>
             <button
-              onclick="scrollToCard(5)"
-              class="flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
+            data-slide="5"
+              class="swiper-btn flex flex-col items-center border-r-2 border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:rounded-2xl hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/bully.svg"
@@ -556,8 +556,8 @@
               </p>
             </button>
             <button
-              onclick="scrollToCard(6)"
-              class="flex flex-col items-center rounded-r-2xl border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-7 md:py-5"
+            data-slide="6"
+              class="swiper-btn flex flex-col items-center rounded-r-2xl border-primary-200 px-2 py-1 transition-all hover:scale-110 hover:border-none hover:bg-yellow md:px-7 md:py-5"
             >
               <img
                 src="./assets/icons/miras.svg"
@@ -572,177 +572,35 @@
             </button>
           </div>
 
-          <div class="relative grid w-max grid-cols-6 justify-center gap-44">
-            <!-- card 1  start-->
-            <div
-              id="card-1"
-              class="flex w-[95vw] max-w-screen-xl flex-col flex-wrap items-center rounded-xl bg-white px-5 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row md:justify-between md:px-10"
-            >
-              <div class="w-full md:w-1/2">
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                  Membedah Tawuran Remaja
-                </h1>
-                <p
-                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
-                >
-                  Kasus tawuran di kalangan remaja terus meningkat akhir-akhir
-                  ini. Berbagai media melaporkan bahwa tidak sedikit korban
-                  telah terkena dampaknya. Banyak warga yang merasa resah dan
-                  telah mencoba melaporkannya. Namun, hingga saat ini, kasus
-                  tawuran masih tetap belum terselesaikan. Oleh karena itu,
-                  perlu dilakukan upaya pencegahan yang lebih efektif.
-                </p>
+          <div
+            class="carousel mx-auto h-96 w-[95%] overflow-x-hidden rounded-3xl"
+          >
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                class="swiper-slide flex h-96 w-full items-center justify-center bg-white"
+              >
+                <div class="flex h-full w-full items-center justify-center">
+                  1
+                </div>
               </div>
-              <div class="w-full md:w-1/2">
-                <img
-                  src="./assets/carousel/rokok.png"
-                  class="h-auto w-full max-w-full"
-                  alt=""
-                />
+              <div
+                class="swiper-slide flex h-96 w-full items-center justify-center bg-white"
+              >
+                <div class="flex h-full w-full items-center justify-center">
+                  1
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex h-96 w-full items-center justify-center bg-white"
+              >
+                <div class="flex h-full w-full items-center justify-center">
+                  1
+                </div>
               </div>
             </div>
-            <!-- card 1 end  -->
-            <!-- card 2  start-->
-            <div
-              id="card-2"
-              class="flex w-[95vw] max-w-screen-xl flex-col flex-wrap items-center rounded-xl bg-white px-5 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row md:justify-between md:px-10"
-            >
-              <div class="w-full md:w-1/2">
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                  Bersama Lawan Narkoba
-                </h1>
-                <p
-                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
-                >
-                  Penyalahgunaan narkoba remaja sangat mengkhawatirkan, media
-                  melaporkan dampak yang sangat merugikan bagi pengguna,
-                  kekhawatiran warga meningkat. Masalah pun masih belum
-                  terselesaikan. Diperlukan pendekatan inovatif dan proaktif
-                  dalam mencegah penyalahgunaan narkoba di kalangan remaja.
-                </p>
-              </div>
-              <div class="w-full md:w-1/2">
-                <img
-                  src="./assets/carousel/rokok.png"
-                  class="h-auto w-full max-w-full"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- card 2 end  -->
-            <!-- card 3  start-->
-            <div
-              id="card-3"
-              class="flex w-[95vw] max-w-screen-xl flex-col flex-wrap items-center rounded-xl bg-white px-5 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row md:justify-between md:px-10"
-            >
-              <div class="w-full md:w-1/2">
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                  Bebas dari Rokok
-                </h1>
-                <p
-                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
-                >
-                  Gelombang penyalahgunaan rokok di kalangan remaja semakin
-                  meresahkan akhir-akhir ini. Media-media melaporkan dampak
-                  buruk yang ditimbulkan, dan kekhawatiran masyarakat semakin
-                  memuncak. Namun, meskipun telah dilaporkan, masalah ini tetap
-                  belum mendapat penyelesaian yang memuaskan. Oleh karena itu,
-                  dibutuhkan pendekatan yang lebih kreatif dan proaktif dalam
-                  mencegah penyalahgunaan rokok di kalangan remaja.
-                </p>
-              </div>
-              <div class="w-full md:w-1/2">
-                <img
-                  src="./assets/carousel/rokok.png"
-                  class="h-auto w-full max-w-full"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- card 3 end  -->
-            <!-- card 4  start-->
-            <div
-              id="card-4"
-              class="flex w-[95vw] max-w-screen-xl flex-col flex-wrap items-center rounded-xl bg-white px-5 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row md:justify-between md:px-10"
-            >
-              <div class="w-full md:w-1/2">
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                  Menghadapi Tantangan Seksual
-                </h1>
-                <p
-                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
-                >
-                  Perilaku seksual remaja meningkat, sorotan media tajam,
-                  kegelisahan masyarakat meluas. Upaya penyelesaiannya pun
-                  sampai sekarang masih belum efektif. Diperlukan langkah
-                  preventif inovatif untuk menangani perilaku seksual di
-                  kalangan generasi muda.
-                </p>
-              </div>
-              <div class="w-full md:w-1/2">
-                <img
-                  src="./assets/carousel/rokok.png"
-                  class="h-auto w-full max-w-full"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- card 4 end  -->
-            <!-- card 5  start-->
-            <div
-              id="card-5"
-              class="flex w-[95vw] max-w-screen-xl flex-col flex-wrap items-center rounded-xl bg-white px-5 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row md:justify-between md:px-10"
-            >
-              <div class="w-full md:w-1/2">
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                  Tolak Perundungan
-                </h1>
-                <p
-                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
-                >
-                  Perundungan remaja meningkat, sorotan media tajam, kegelisahan
-                  masyarakat meluas. Upaya penyelesaian sampai sekarang masih
-                  belum efektif. Diperlukan langkah preventif inovatif untuk
-                  menangani perundungan di kalangan generasi muda.
-                </p>
-              </div>
-              <div class="w-full md:w-1/2">
-                <img
-                  src="./assets/carousel/rokok.png"
-                  class="h-auto w-full max-w-full"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- card 5 end  -->
-            <!-- card 6  start-->
-            <div
-              id="card-6"
-              class="flex w-[95vw] max-w-screen-xl flex-col flex-wrap items-center rounded-xl bg-white px-5 py-8 sm:w-2/3 md:mx-36 md:w-[1280px] md:flex-row md:justify-between md:px-10"
-            >
-              <div class="w-full md:w-1/2">
-                <h1 class="mb-5 font-radioCasnada text-5xl font-semibold">
-                  Remaja Sehat, Tanpa Miras
-                </h1>
-                <p
-                  class="w-fit max-w-screen-sm text-sm text-secondary-200 md:text-base"
-                >
-                  Konsumsi miras remaja meningkat, sorotan media tajam,
-                  kegelisahan masyarakat meluas. Upaya penyelesaian belum
-                  efektif. Diperlukan langkah preventif inovatif untuk mengatasi
-                  konsumsi miras di kalangan generasi muda, mengingat risiko
-                  kesehatan dan perilaku berbahaya.
-                </p>
-              </div>
-              <div class="w-full md:w-1/2">
-                <img
-                  src="./assets/carousel/rokok.png"
-                  class="h-auto w-full max-w-full"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- card 6 end  -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -2264,7 +2122,6 @@
 
         card.scrollIntoView({ behavior: "smooth", inline: "center" });
       }
-      scrollToCard(1);
 
       //accordion
       function toggleAccordion(button) {

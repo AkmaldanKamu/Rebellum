@@ -4,9 +4,10 @@ import Chart from "chart.js/auto";
 const chartHTML = document.getElementById("mychart");
 
 let tawuran = [
-  { year: "2016 - 2018", kasus: 12.35 },
-  { year: "2018 - 2020", kasus: 14.25 },
-  { year: "2020 - 2022", kasus: 16.55 },
+  { year: "", kasus: 0 },
+  { year: "2018 - 2020", kasus: 12.35 },
+  { year: "2010 - 2022", kasus: 14.25 },
+  { year: "2022 - 2024", kasus: 16.55 },
 ];
 
 const updateChart = () => {
@@ -20,9 +21,10 @@ const tawuranBtn = document.getElementById("tawuran");
 tawuranBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "2016 - 2018", kasus: 12.35 },
-    { year: "2018 - 2020", kasus: 14.25 },
-    { year: "2020 - 2022", kasus: 16.55 },
+    { year: "", kasus: 0 },
+    { year: "2018 - 2020", kasus: 12.35 },
+    { year: "2020 - 2022", kasus: 14.25 },
+    { year: "2022 - 2024", kasus: 16.55 },
   ];
   updateChart();
   chartHTML.scrollIntoView({ behavior: "smooth" });
@@ -32,6 +34,7 @@ const narkobaBtn = document.getElementById("narkoba");
 narkobaBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
+    { year: "", kasus: 0 },
     { year: "2018 - 2020", kasus: 28 },
     { year: "2020 - 2022", kasus: 27 },
     { year: "2022 - 2024", kasus: 17 },
@@ -44,6 +47,7 @@ const merokokBtn = document.getElementById("merokok");
 merokokBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
+    { year: "", kasus: 0 },
     { year: "2018 - 2020", kasus: 18.8 },
     { year: "2020 - 2022", kasus: 22.4 },
     { year: "2022 - 2024", kasus: 28.6 },
@@ -56,8 +60,10 @@ const seksual = document.getElementById("seksual");
 seksual.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "2013", kasus: 63 },
-    { year: "2017", kasus: 10 },
+    { year: "", kasus: 0 },
+    { year: "2018 -2020", kasus: 15 },
+    { year: "2020 - 2022", kasus: 10 },
+    { year: "2022 - 2024", kasus: 10 },
   ];
   updateChart();
   chartHTML.scrollIntoView({ behavior: "smooth" });
@@ -67,6 +73,7 @@ const perundungan = document.getElementById("perundungan");
 perundungan.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
+    { year: "", kasus: 0 },
     { year: "bullying fisik", kasus: 55.5 },
     { year: "bullying verbal", kasus: 29.3 },
     { year: "bullying psikologis", kasus: 15.2 },
@@ -82,7 +89,8 @@ const minumanKeras = document.getElementById("minumanKeras");
 minumanKeras.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "14 - 16 tahun", kasus: 47.7 },
+    { year: "", kasus: 0 },
+    { year: "14 - 16 tahun 2018 - 2020", kasus: 47.7 },
     { year: "15 - 19 tahun (pria)", kasus: 70 },
     { year: "15 - 19 tahun (wanita)", kasus: 58 },
   ];

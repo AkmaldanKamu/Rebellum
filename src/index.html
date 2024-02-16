@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rebellum adalah website yang kami ciptakan untuk menyelesaikan
+      permasalahan yang lagi marak dan sulit untuk terselesaikan, yaitu
+      Kenakalan Remaja. Kami menjelaskan serta membimbing para pengguna
+      untuk mengatasi permasalahan nya."
+    />
     <title>Rebellum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1631,37 +1638,51 @@
     <!-- data section end -->
 
     <!-- konsultasi start -->
-    <section id="konsultasi" class="mt-10 flex">
-      <div class="backg flex justify-between p-0">
-        <img src="assets/konsultasi/Vector.png" alt class="vektor_konseling" />
-        <div class="text_konsultasi">
-          <h1 class="mb-1 text-2xl font-bold">
-            Hindari kenakalan, ceritakan pada kami!
-          </h1>
-          <p class="text-base">
-            Kami memiliki layanan untuk bisa berkonsultasi dengan kami, kami tim
-            Rebellum akan selalu memberikan saran dan bimbingan kepadamu!
-            Masukkan nama dan nomor kamu dengan benar!
-          </p>
-          <input
-            type="text"
-            placeholder="Masukan Nama Anda"
-            class="input_konsultasi"
-          />
-          <input
-            type="text"
-            placeholder="Masukan Keluhan Anda"
-            class="input_konsultasi"
-          />
-          <input
-            type="text"
-            placeholder="Masukan Keluhan Anda"
-            class="input_konsultasi"
-          />
-          <div class="input-group">
-            <input type="button" value="Kirim" class="btn_konsultasi" />
+    <section id="konsultasi" class="w-full overflow-x-hidden">
+      <div class="relative w-full sm:w-[90%]">
+        <div
+          class="flex items-center bg-primary-200 px-4 py-5 sm:rounded-r-full sm:pl-5"
+        >
+          <div class="w-full sm:w-3/4">
+            <h1 class="text-2xl font-bold text-white sm:text-3xl">
+              Hindari kenakalan, ceritakan pada kami!
+            </h1>
+            <p class="my-5 text-xs text-white sm:text-sm">
+              Kami memiliki layanan untuk bisa berkonsultasi dengan kami, kami
+              tim Rebellum akan selalu memberikan saran dan bimbingan kepadamu!
+              Masukkan nama dan nomor kamu dengan benar!
+            </p>
+
+            <div class="flex flex-col">
+              <input
+                type="text"
+                placeholder="Masukkan nama"
+                class="my-2 rounded-2xl border-none pl-4 focus:ring-yellow"
+              />
+              <input
+                type="text"
+                placeholder="Masukkan nama"
+                class="my-2 rounded-2xl border-none pl-4 focus:ring-yellow"
+              />
+              <textarea
+                class="my-2 max-h-24 rounded-2xl p-2"
+                cols="30"
+                placeholder="Masukkan keluhan anda"
+              ></textarea>
+              <button
+                type="submit"
+                class="mt-2 w-[100px] rounded-l-3xl rounded-r-3xl bg-yellow px-5 py-3 text-white"
+              >
+                Kirim
+              </button>
+            </div>
           </div>
         </div>
+        <img
+          src="./assets/konsultasi/Vector.png"
+          alt=""
+          class="absolute bottom-0 right-0 hidden h-full max-h-[400px] w-auto translate-x-28 sm:block"
+        />
       </div>
     </section>
     <!-- konsultasi end -->
@@ -1675,8 +1696,8 @@
           Tim <span class="text-yellow">kami</span>
         </h1>
         <p class="text-center text-base text-secondary-200">
-          Hindari kenakalan remaja bersama
-          <span class="font-bold">Rebellum!</span>
+          Bersama <span class="font-bold">Rebellum</span>, kenakalan remaja
+          <span class="font-bold">terhapuskan!</span>
         </p>
 
         <!-- Slider main container -->
@@ -1977,12 +1998,12 @@
           <!-- If we need navigation buttons -->
           <div class="flex items-center justify-center gap-5">
             <button
-              class="button-prev flex h-[50px] w-[50px] items-center justify-center rounded-full border border-yellow bg-transparent text-yellow focus:bg-yellow focus:text-white"
+              class="button-prev flex h-[50px] w-[50px] items-center justify-center rounded-full border border-yellow bg-transparent text-yellow transition ease-in-out hover:bg-yellow hover:text-white"
             >
               <ion-icon name="chevron-back-outline"></ion-icon>
             </button>
             <button
-              class="button-next flex h-[50px] w-[50px] items-center justify-center rounded-full border border-yellow bg-transparent text-yellow focus:bg-yellow focus:text-white"
+              class="button-next flex h-[50px] w-[50px] items-center justify-center rounded-full border border-yellow bg-transparent text-yellow transition ease-in-out hover:bg-yellow hover:text-white"
             >
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </button>

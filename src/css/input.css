@@ -101,20 +101,20 @@ button:hover .button-text {
 }
 
 /* css konsultasi */
-#konsultasi {
+/* #konsultasi {
   @apply flex flex-col items-center justify-center;
-}
-
+} */
+/* 
 .backg {
   @apply relative mr-[200px] flex w-[90%] bg-[url("../assets/konsultasi/Rectangle87.png")] bg-cover bg-center bg-no-repeat p-8;
-}
+} */
 
 .text_konsultasi {
-  @apply ml-5 max-w-[70%] text-white;
+  @apply ml-5 max-w-[65%] text-white;
 }
 
 .input_konsultasi {
-  @apply mb-1 mt-5 w-full rounded-[200px] p-[10] text-lg text-black;
+  @apply mb-1 mt-5 w-full rounded-[200px] p-[10] text-base text-black;
 }
 
 .input-group {
@@ -126,7 +126,7 @@ button:hover .button-text {
 }
 
 .vektor_konseling {
-  @apply absolute -right-[160px] top-[49%] z-10 h-auto max-w-[50%] -translate-y-[53%];
+  @apply absolute -right-[160px] top-1/2 z-10 h-auto max-w-[50%] -translate-y-[53%];
 }
 
 @media screen and (max-width: 768px) {

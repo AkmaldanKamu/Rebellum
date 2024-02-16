@@ -5,6 +5,7 @@ import 'ionicons';
 import './sweeper';
 import "./chart";
 import "./three";
+import './logo.three'
 import "./gsap";
 
 Aos.init({

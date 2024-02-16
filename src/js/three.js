@@ -31,8 +31,22 @@ const axesHelper = new THREE.AxesHelper(30);
 // scene.add(axesHelper);
 
 const ambientLight = new THREE.AmbientLight()
-ambientLight.intensity = 15;
+ambientLight.intensity = 8;
 scene.add(ambientLight)
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 5)
+directionalLight.position.set(30, 50, 30)
+scene.add(directionalLight)
+
+const directionalLight2 = new THREE.DirectionalLight(0xffffff, 5)
+directionalLight2.position.set(-30, -15, -30)
+scene.add(directionalLight2)
+
+// const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight, 5)
+// scene.add(directionalLightHelper)
+
+// const directionalLightHelper2 = new THREE.DirectionalLightHelper(directionalLight2, 5)
+// scene.add(directionalLightHelper2)
 
 const loader = new GLTFLoader();
 
@@ -123,8 +137,8 @@ Promise.all([celurit1, celurit2, botol, botol2, obat, kapsul, kapsul2]).then(([c
 });
 
 const orbit = new OrbitControls(camera, canvas);
-orbit.enablePan = false
-orbit.enableZoom = false
+// orbit.enablePan = false
+// orbit.enableZoom = false
 orbit.update();
 
 function animateRotation(object, speed = 1000) {

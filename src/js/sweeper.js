@@ -26,7 +26,7 @@ const swiper = new Swiper('.team', {
 });
 
 const carousel = new Swiper('.carousel', {
-  loop: true,
+  // loop: true,
   slidesPerView: 1,
   centeredSlides: true,
 });

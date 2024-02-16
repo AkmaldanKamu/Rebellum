@@ -21,6 +21,10 @@ const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 camera.position.set(0, 0, 37); // Posisi kamera diperbarui untuk menghadap objek dari jarak 100 unit
 camera.lookAt(0, 0, 0); // Kamera menghadap ke titik tengah (0, 0, 0) di scene
 
+if (window.innerWidth < 500) {
+  camera.position.set(0, 0, 45);
+}
+
 const gridHelper = new THREE.GridHelper(30);
 // scene.add(gridHelper);
 

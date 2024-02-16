@@ -137,8 +137,8 @@ Promise.all([celurit1, celurit2, botol, botol2, obat, kapsul, kapsul2]).then(([c
 });
 
 const orbit = new OrbitControls(camera, canvas);
-// orbit.enablePan = false
-// orbit.enableZoom = false
+orbit.enablePan = false
+orbit.enableZoom = false
 orbit.update();
 
 function animateRotation(object, speed = 1000) {

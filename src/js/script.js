@@ -11,7 +11,7 @@ import "./gsap";
 
 Aos.init({
   mirror: false,
-  // once: true,
+  once: true,
 });
 
 

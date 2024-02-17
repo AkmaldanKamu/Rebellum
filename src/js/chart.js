@@ -4,10 +4,12 @@ import Chart from "chart.js/auto";
 const chartHTML = document.getElementById("mychart");
 
 let tawuran = [
-  { year: "", kasus: 0 },
-  { year: "2018 - 2020", kasus: 12.35 },
-  { year: "2010 - 2022", kasus: 14.25 },
-  { year: "2022 - 2024", kasus: 16.55 },
+  { year: "2019", kasus: 0.4 },
+  { year: "2020", kasus: 0.65 },
+  { year: "2021", kasus: 0.22 },
+  { year: "2022", kasus: 0.14 },
+  { year: "2023", kasus: 0.16 },
+
 ];
 
 const updateChart = () => {
@@ -21,10 +23,12 @@ const tawuranBtn = document.getElementById("tawuran");
 tawuranBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
-    { year: "2018 - 2020", kasus: 12.35 },
-    { year: "2020 - 2022", kasus: 14.25 },
-    { year: "2022 - 2024", kasus: 16.55 },
+
+    { year: "2019", kasus: 0.4 },
+    { year: "2020", kasus: 0.65 },
+    { year: "2021", kasus: 0.22 },
+    { year: "2022", kasus: 0.14 },
+    { year: "2023", kasus: 0.16 },
   ];
   updateChart();
 });
@@ -33,10 +37,12 @@ const narkobaBtn = document.getElementById("narkoba");
 narkobaBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
-    { year: "2018 - 2020", kasus: 28 },
-    { year: "2020 - 2022", kasus: 27 },
-    { year: "2022 - 2024", kasus: 17 },
+
+    { year: "2019", kasus: 28 },
+    { year: "2020", kasus: 12 },
+    { year: "2021", kasus: 14 },
+    { year: "2022", kasus: 13 },
+    { year: "2023", kasus: 16 },
   ];
   updateChart();
 });
@@ -47,10 +53,11 @@ const merokokBtn = document.getElementById("merokok");
 merokokBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
-    { year: "2018 - 2020", kasus: 18.8 },
-    { year: "2020 - 2022", kasus: 22.4 },
-    { year: "2022 - 2024", kasus: 28.6 },
+    { year: "2019", kasus: 10.54 },
+    { year: "2020", kasus: 10.61 },
+    { year: "2021", kasus: 9.98 },
+    { year: "2022", kasus: 22.04 },
+    { year: "2023", kasus: 18.8 },
   ];
   updateChart();
 });
@@ -58,12 +65,14 @@ merokokBtn.addEventListener("click", () => {
 const seksual = document.getElementById("seksual");
 seksual.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
-  tawuran = [
-    { year: "", kasus: 0 },
-    { year: "2018 -2020", kasus: 15 },
-    { year: "2020 - 2022", kasus: 10 },
-    { year: "2022 - 2024", kasus: 10 },
-  ];
+  tawuran = alert('sedang update');
+  // [
+  //   { year: "2019", kasus: 0.4  },
+  //   { year: "2020", kasus: 0.65 },
+  //   { year: "2021", kasus: 0.22 },
+  //   { year: "2022", kasus: 0.14 },
+  //   { year: "2023", kasus: 0.16 },
+  // ];
   updateChart();
 });
 
@@ -71,13 +80,10 @@ const perundungan = document.getElementById("perundungan");
 perundungan.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
-    { year: "bullying fisik", kasus: 55.5 },
-    { year: "bullying verbal", kasus: 29.3 },
-    { year: "bullying psikologis", kasus: 15.2 },
-    { year: "siswa SD", kasus: 26 },
-    { year: "siswa SMP", kasus: 25 },
-    { year: "siswa SMA", kasus: 18.75 },
+    { year: "2019", kasus: 23 },
+    { year: "2020", kasus: 50 },
+    { year: "2021", kasus: 13.5 },
+    { year: "2022", kasus: 13.5 },
   ];
   updateChart();
 });
@@ -86,10 +92,11 @@ const minumanKeras = document.getElementById("minumanKeras");
 minumanKeras.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
-    { year: "14 - 16 tahun 2018 - 2020", kasus: 47.7 },
-    { year: "15 - 19 tahun (pria)", kasus: 70 },
-    { year: "15 - 19 tahun (wanita)", kasus: 58 },
+    { year: "2019", kasus: 1.66 },
+    { year: "2020", kasus: 1.48 },
+    { year: "2021", kasus: 1.30 },
+    { year: "2022", kasus: 1.22 },
+    { year: "2023", kasus: 1.14 },
   ];
   updateChart();
 });

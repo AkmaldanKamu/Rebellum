@@ -4,7 +4,6 @@ import Chart from "chart.js/auto";
 const chartHTML = document.getElementById("mychart");
 
 let tawuran = [
-  { year: "", kasus: 0 },
   { year: "2019", kasus: 0.4 },
   { year: "2020", kasus: 0.65 },
   { year: "2021", kasus: 0.22 },
@@ -24,7 +23,7 @@ const tawuranBtn = document.getElementById("tawuran");
 tawuranBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
+
     { year: "2019", kasus: 0.4 },
     { year: "2020", kasus: 0.65 },
     { year: "2021", kasus: 0.22 },
@@ -32,14 +31,13 @@ tawuranBtn.addEventListener("click", () => {
     { year: "2023", kasus: 0.16 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const narkobaBtn = document.getElementById("narkoba");
 narkobaBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
-    { year: "", kasus: 0 },
+
     { year: "2019", kasus: 28 },
     { year: "2020", kasus: 12 },
     { year: "2021", kasus: 14 },
@@ -47,8 +45,9 @@ narkobaBtn.addEventListener("click", () => {
     { year: "2023", kasus: 16 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
+
+console.dir(narkobaBtn);
 
 const merokokBtn = document.getElementById("merokok");
 merokokBtn.addEventListener("click", () => {
@@ -61,7 +60,6 @@ merokokBtn.addEventListener("click", () => {
     { year: "2023", kasus: 18.8 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const seksual = document.getElementById("seksual");
@@ -76,8 +74,6 @@ seksual.addEventListener("click", () => {
   //   { year: "2023", kasus: 0.16 },
   // ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
-  
 });
 
 const perundungan = document.getElementById("perundungan");
@@ -90,7 +86,6 @@ perundungan.addEventListener("click", () => {
     { year: "2022", kasus: 13.5 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const minumanKeras = document.getElementById("minumanKeras");
@@ -104,7 +99,6 @@ minumanKeras.addEventListener("click", () => {
     { year: "2023", kasus: 1.14 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const myChart = new Chart(chartHTML, {

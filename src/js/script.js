@@ -34,9 +34,7 @@ const indonesia = new Typed(".indonesia", {
   startDelay: 500,
   onComplete: (self) => {
     const typed = document.querySelector(".indonesia");
-    typed.classList.add("bg-yellow", "text-white");
-
-    const desc = document.getElementById("desc");
+    // typed.classList.add("bg-yellow", "text-white");
   },
 });
 

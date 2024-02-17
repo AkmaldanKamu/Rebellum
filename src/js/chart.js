@@ -27,7 +27,6 @@ tawuranBtn.addEventListener("click", () => {
     { year: "2022 - 2024", kasus: 16.55 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const narkobaBtn = document.getElementById("narkoba");
@@ -40,8 +39,9 @@ narkobaBtn.addEventListener("click", () => {
     { year: "2022 - 2024", kasus: 17 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
+
+console.dir(narkobaBtn);
 
 const merokokBtn = document.getElementById("merokok");
 merokokBtn.addEventListener("click", () => {
@@ -53,7 +53,6 @@ merokokBtn.addEventListener("click", () => {
     { year: "2022 - 2024", kasus: 28.6 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const seksual = document.getElementById("seksual");
@@ -66,7 +65,6 @@ seksual.addEventListener("click", () => {
     { year: "2022 - 2024", kasus: 10 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const perundungan = document.getElementById("perundungan");
@@ -82,7 +80,6 @@ perundungan.addEventListener("click", () => {
     { year: "siswa SMA", kasus: 18.75 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const minumanKeras = document.getElementById("minumanKeras");
@@ -95,7 +92,6 @@ minumanKeras.addEventListener("click", () => {
     { year: "15 - 19 tahun (wanita)", kasus: 58 },
   ];
   updateChart();
-  chartHTML.scrollIntoView({ behavior: "smooth" });
 });
 
 const myChart = new Chart(chartHTML, {

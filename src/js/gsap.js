@@ -27,14 +27,14 @@ tl.to(
   0,
 ); // Add the animation at the start of the timeline
 
-gsap.fromTo(".pesawat", { right: '-30%' }, {
+gsap.fromTo(".pesawat", { x: '10vw' }, {
   scrollTrigger: {
     trigger: "#pengaruh",
     start: "top bottom",
     end: "bottom bottom",
     scrub: true,
   },
-  right: '100%',
+  x: '-100vw',
   yoyoEase: true,
 });
 

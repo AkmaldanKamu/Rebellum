@@ -1,6 +1,10 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { ScrollTrigger, gsap } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const canvas = document.getElementById('logoCanvas')
 
 const renderer = new THREE.WebGLRenderer({
@@ -55,19 +59,23 @@ const loader = new GLTFLoader();
 
 const logo = new Promise((resolve, reject) => {
   loader.load('/logo.glb', (gltf) => {
-    gltf.scene.scale.set(25, 25, 25)
+    const model = gltf.scene
+    model.scale.set(25, 25, 25)
 
-    scene.add(gltf.scene)
-    resolve(gltf.scene);
+    console.log(model);
+
+    scene.add(model)
+    resolve(model);
   })
 })
 
 const loading = document.getElementById('loading2');
 loading.style.display = 'flex';
-Promise.all([logo]).then(([logo]) => {
+logo.then((logo) => {
   loading.style.display = 'none';
-  // Kedua model telah dimuat
-  // Mulai animasi rotasi untuk kedua model di sini
+
+
+
   mutar(logo)
 });
 

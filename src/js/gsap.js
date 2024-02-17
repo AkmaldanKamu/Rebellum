@@ -82,14 +82,14 @@ if (window.innerWidth > 768) {
   })
 
 }
-ScrollTrigger.create({
-  trigger: "#data-children",
-  start: "top bottom",
-  end: "bottom center",
-  onEnter: () => {
-    gsap.from("#data-children", {
-      y: "300",
-      duration: 1,
-    })
-  },
-})
+// ScrollTrigger.create({
+//   trigger: "#data-children",
+//   start: "top bottom",
+//   end: "bottom center",
+//   onEnter: () => {
+//     gsap.from("#data-children", {
+//       y: "300",
+//       duration: 1,
+//     })
+//   },
+// })

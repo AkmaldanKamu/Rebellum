@@ -1,6 +1,7 @@
 import "flowbite";
 import Typed from "typed.js";
 import Aos from "aos";
+import 'aos/dist/aos.css'
 import 'ionicons';
 import './sweeper';
 import "./chart";
@@ -10,6 +11,7 @@ import "./gsap";
 
 Aos.init({
   mirror: false,
+  // once: true,
 });
 
 
@@ -33,6 +35,8 @@ const indonesia = new Typed(".indonesia", {
   onComplete: (self) => {
     const typed = document.querySelector(".indonesia");
     typed.classList.add("bg-yellow", "text-white");
+
+    const desc = document.getElementById("desc");
   },
 });
 
@@ -67,4 +71,16 @@ window.onscroll = () => {
     }
 
   });
+
+  const toUp = document.getElementById("toUp");
+  if (window.scrollY > 0) {
+    toUp.classList.remove("hidden");
+    toUp.classList.add("flex");
+  } else {
+    toUp.classList.remove('opacity-0');
+    toUp.classList.add("hidden");
+    toUp.classList.remove("flex");
+
+  }
 };
+

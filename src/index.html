@@ -27,6 +27,15 @@
     </div> -->
     <!-- loader section end -->
 
+    <!-- fast navigation -->
+    <div
+      id="toUp"
+      class="fixed bottom-8 right-5 z-30 hidden cursor-pointer items-center justify-center rounded-full bg-yellow p-3 text-xl text-white opacity-100 transition duration-300 md:p-5"
+    >
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </div>
+    <!-- fast navigation -->
+
     <!-- navbar section start-->
     <header>
       <nav
@@ -193,6 +202,8 @@
         <div class="-mt-1 bg-primary-100 pb-10 pt-36">
           <div class="container">
             <h1
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
               class="text-center font-radioCasnada text-2xl font-bold text-white md:text-4xl"
             >
               Temuan Umum
@@ -201,13 +212,18 @@
             <div class="mt-10 w-full">
               <div class="accordion flex flex-col">
                 <!-- accordion-1 -->
-                <div class="accordion-item my-2" data-aos="fade-up">
+                <div
+                  class="accordion-item my-2"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-delay="50"
+                >
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
                   >
                     <span class="text-base font-medium md:text-lg">
-                      Faktor-Faktor Kenakalan Remaja
+                      Faktor Kenakalan Remaja
                     </span>
                     <svg
                       class="plus-icon h-4 w-4 fill-current"
@@ -245,7 +261,12 @@
                   </div>
                 </div>
                 <!-- accordion-2 -->
-                <div class="accordion-item my-2" data-aos="fade-up">
+                <div
+                  class="accordion-item my-2"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-delay="100"
+                >
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -288,7 +309,12 @@
                   </div>
                 </div>
                 <!-- accordion-3 -->
-                <div class="accordion-item my-2" data-aos="fade-up">
+                <div
+                  class="accordion-item my-2"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-delay="150"
+                >
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -333,7 +359,12 @@
                   </div>
                 </div>
                 <!-- accordion-4 -->
-                <div class="accordion-item my-2" data-aos="fade-up">
+                <div
+                  class="accordion-item my-2"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-delay="200"
+                >
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -375,7 +406,12 @@
                   </div>
                 </div>
                 <!-- accordion-5 -->
-                <div class="accordion-item my-2" data-aos="fade-up">
+                <div
+                  class="accordion-item my-2"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-delay="250"
+                >
                   <button
                     class="accordion-title flex w-full items-center justify-between rounded-t-lg bg-primary-200 px-4 py-4 text-white transition duration-300 focus:outline-none"
                     onclick="toggleAccordion(this)"
@@ -479,6 +515,8 @@
               <div class="line"></div>
             </h1>
             <p
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
               id="rebelliumDesc"
               class="text-sm text-secondary-200 md:max-w-2xl md:text-base"
             >
@@ -572,7 +610,7 @@
               <p
                 class="font-poppins text-xs font-medium text-white md:text-base"
               >
-                bullying
+                Bullying
               </p>
             </button>
             <button
@@ -627,8 +665,8 @@
                     </div>
                     <div class="w-full md:w-1/2">
                       <img
-                        src="./assets/carousel/rokok.png"
-                        class="mx-auto h-full w-auto max-w-full"
+                        src="./assets/carousel/tawuran.png"
+                        class="mx-auto h-full max-h-full w-auto"
                         alt=""
                       />
                     </div>
@@ -663,7 +701,7 @@
                     </div>
                     <div class="w-full md:w-1/2">
                       <img
-                        src="./assets/carousel/rokok.png"
+                        src="./assets/carousel/narkoba.png"
                         class="mx-auto h-full w-auto max-w-full"
                         alt=""
                       />
@@ -733,7 +771,7 @@
                     </div>
                     <div class="w-full md:w-1/2">
                       <img
-                        src="./assets/carousel/rokok.png"
+                        src="./assets/carousel/seksual.png"
                         class="mx-auto h-full w-auto max-w-full"
                         alt=""
                       />
@@ -768,7 +806,7 @@
                     </div>
                     <div class="w-full md:w-1/2">
                       <img
-                        src="./assets/carousel/rokok.png"
+                        src="./assets/carousel/bullying.png"
                         class="mx-auto h-full w-auto max-w-full"
                         alt=""
                       />
@@ -834,10 +872,17 @@
         alt
       />
       <div class="container">
-        <h1 class="text-center text-3xl font-semibold md:text-4xl">
+        <h1
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          class="text-center text-3xl font-semibold md:text-4xl"
+        >
           Pengaruh dari <span class="text-yellow">Kenakalan Remaja</span>
         </h1>
         <p
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
           class="mx-auto mt-5 text-center text-sm text-secondary-200 md:max-w-2xl md:text-base"
         >
           Kenakalan remaja memiliki dampak yang luas, mempengaruhi baik individu
@@ -1550,6 +1595,9 @@
         />
       </div>
       <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="300"
         id="data-children"
         class="z-20 -mt-20 h-96 w-full rounded-t-3xl bg-white pt-10 md:-mt-28 md:rounded-t-[126px]"
       >
@@ -1573,6 +1621,9 @@
           >
             <!-- card 1 -->
             <button
+              data-aos="zoom-in"
+              data-aos-easing="ease-out"
+              data-aos-delay="100"
               id="tawuran"
               class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
@@ -1580,7 +1631,7 @@
                 class="flex h-[48px] w-[48px] items-center justify-center rounded-lg bg-white text-black md:h-[96px] md:w-[96px]"
               >
                 <img
-                  src="./assets/icons/tawuran.png"
+                  src="./assets/icons/celurit.png"
                   class="h-auto w-full"
                   alt=""
                 />
@@ -1593,6 +1644,9 @@
             </button>
             <!-- card 2 -->
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-out"
+              data-aos-delay="200"
               id="narkoba"
               class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
@@ -1613,6 +1667,9 @@
             </div>
             <!-- card 3 -->
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-out"
+              data-aos-delay="300"
               id="merokok"
               class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
@@ -1633,6 +1690,9 @@
             </div>
             <!-- card 4 -->
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-out"
+              data-aos-delay="400"
               id="seksual"
               class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#F89B11] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
@@ -1653,6 +1713,9 @@
             </div>
             <!-- card 5 -->
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-out"
+              data-aos-delay="500"
               id="perundungan"
               class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#0D1981] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
@@ -1673,6 +1736,9 @@
             </div>
             <!-- card 6 -->
             <div
+              data-aos="zoom-in"
+              data-aos-easing="ease-out"
+              data-aos-delay="600"
               id="minumanKeras"
               class="flex w-full max-w-xs cursor-pointer gap-2 rounded-xl bg-[#6874B9] p-3 transition hover:-translate-y-1 hover:opacity-90 md:w-fit"
             >
@@ -1693,7 +1759,11 @@
             </div>
           </div>
 
-          <h1 class="my-10 font-poppins text-2xl font-bold md:ml-20">
+          <h1
+            data-aos="fade-right"
+            data-aos-offset="200"
+            class="my-10 font-poppins text-2xl font-bold md:ml-20"
+          >
             Persentase Data dalam <span class="text-yellow">Bentuk Grafik</span>
           </h1>
 
@@ -1714,14 +1784,14 @@
         <div
           class="flex items-center bg-primary-200 px-4 py-5 sm:rounded-r-full sm:pl-5"
         >
-          <div class="ml-0 w-full sm:ml-8 sm:w-3/4 md:ml-14">
+          <div class="container ml-0 w-full sm:ml-8 sm:w-3/4 md:ml-14">
             <h1 class="text-2xl font-bold text-white sm:text-3xl">
               Hindari kenakalan, ceritakan pada kami!
             </h1>
             <p class="my-5 text-xs text-white sm:text-sm">
               Kami memiliki layanan untuk bisa berkonsultasi dengan kami, kami
               tim Rebellum akan selalu memberikan saran dan bimbingan kepadamu!
-              Masukkan nama dan nomor kamu dengan benar!
+              Masukkan nama dan email kamu dengan benar!
             </p>
 
             <div class="flex flex-col">
@@ -1762,11 +1832,18 @@
     <section id="team">
       <div class="container mb-28 mt-32">
         <h1
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
           class="text-center font-radioCasnada text-3xl font-semibold md:text-4xl"
         >
           Tim <span class="text-yellow">kami</span>
         </h1>
-        <p class="text-center text-base text-secondary-200">
+        <p
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+          class="text-center text-base text-secondary-200"
+        >
           Bersama <span class="font-bold">Rebellum</span>, kenakalan remaja
           <span class="font-bold">terhapuskan!</span>
         </p>
@@ -1848,7 +1925,7 @@
                         <h1 class="text-center text-base font-bold">
                           Nazla Rahma
                         </h1>
-                        <p class="text-center text-sm">UI/UX, Ilustrator</p>
+                        <p class="text-center text-sm">UI/UX, Illustrator</p>
                       </div>
 
                       <div
@@ -1962,7 +2039,7 @@
                       />
                       <div class="my-4">
                         <h1 class="text-center text-base font-bold">
-                          Ramadina Al Muzthazam
+                          Ramadina Al muzthazam
                         </h1>
                         <p class="text-center text-sm">Programmer</p>
                       </div>
@@ -2086,7 +2163,7 @@
 
     <!-- footer section start -->
     <footer class="bg-[#0D1133]">
-      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="container mx-auto w-full p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 flex flex-col justify-between md:mb-0">
             <a href="#home" class="flex items-center">
@@ -2192,11 +2269,6 @@
               </h2>
               <ul class="font-medium text-gray-500">
                 <li class="mb-4">
-                  <a href="https://Pinterest.com/" class="hover:underline"
-                    >Pinterest</a
-                  >
-                </li>
-                <li class="mb-4">
                   <a href="https://www.freepik.com/" class="hover:underline"
                     >Freepik</a
                   >
@@ -2214,7 +2286,7 @@
         <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 dark:text-gray-400 sm:text-center"
-            >Made with ❤️ by Rebellum Team
+            >Made by Rebellum Team
           </span>
           <div class="mt-4 flex sm:mt-0 sm:justify-center">
             <a

@@ -1,11 +1,13 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 import { ScrollTrigger, gsap } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const canvas = document.getElementById('logoCanvas')
+const hdrTextureUrl = new URL('/texture.hdr', import.meta.url)
 
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
@@ -60,13 +62,22 @@ const loader = new GLTFLoader();
 const logo = new Promise((resolve, reject) => {
   loader.load('/logo.glb', (gltf) => {
     const model = gltf.scene
-    model.scale.set(25, 25, 25)
-
-    console.log(model);
+    model.scale.set(10, 10, 10)
+    model.position.setY(-5)
 
     scene.add(model)
     resolve(model);
   })
+})
+
+// renderer.outputColorSpace = THREE.SRGBColorSpace;
+// renderer.toneMapping = THREE.ACESFilmicToneMapping
+// renderer.toneMappingExposure = 1
+
+const textureLoader = new RGBELoader()
+textureLoader.load(hdrTextureUrl, (texture) => {
+  texture.mapping = THREE.EquirectangularReflectionMapping
+  scene.environment = texture
 })
 
 const loading = document.getElementById('loading2');
@@ -74,15 +85,13 @@ loading.style.display = 'flex';
 logo.then((logo) => {
   loading.style.display = 'none';
 
-
-
   mutar(logo)
 });
 
 const orbit = new OrbitControls(camera, canvas);
 orbit.enablePan = false
 orbit.enableZoom = false
-orbit.update();
+orbit.update()
 
 function animateRotation(object, speed = 1000) {
   const initialY = object.position.y;
@@ -90,7 +99,6 @@ function animateRotation(object, speed = 1000) {
     requestAnimationFrame(animate);
     // object.rotation.y += Math.PI / 270;
     object.position.y = initialY + Math.sin(performance.now() / speed) * 5;
-    object.position
     renderer.render(scene, camera);
   }
   animate();

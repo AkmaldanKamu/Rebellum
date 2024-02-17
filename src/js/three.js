@@ -1,8 +1,10 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 const canvas = document.getElementById('canvas')
+const hdrTextureUrl = new URL('/texture.hdr', import.meta.url)
 
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
@@ -47,6 +49,12 @@ scene.add(directionalLight2)
 
 // const directionalLightHelper2 = new THREE.DirectionalLightHelper(directionalLight2, 5)
 // scene.add(directionalLightHelper2)
+
+const textureLoader = new RGBELoader()
+textureLoader.load(hdrTextureUrl, (texture) => {
+  texture.mapping = THREE.EquirectangularReflectionMapping
+  scene.environment = texture
+})
 
 const loader = new GLTFLoader();
 

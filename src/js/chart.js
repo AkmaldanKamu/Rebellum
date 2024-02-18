@@ -64,15 +64,12 @@ merokokBtn.addEventListener("click", () => {
 
 const seksual = document.getElementById("seksual");
 seksual.addEventListener("click", () => {
-  // Mengganti data saat tombol A diklik
-  tawuran = alert('sedang update');
-  // [
-  //   { year: "2019", kasus: 0.4  },
-  //   { year: "2020", kasus: 0.65 },
-  //   { year: "2021", kasus: 0.22 },
-  //   { year: "2022", kasus: 0.14 },
-  //   { year: "2023", kasus: 0.16 },
-  // ];
+  tawuran = [
+    { year: "pernikahan dini", kasus: 21.4  },
+    { year: "hamil diluar nikah", kasus: 12.2 },
+    { year: "hamil saat penelitian", kasus: 5.7 },
+    { year: "melakukan aborsi", kasus: 7 },
+  ];
   updateChart();
 });
 

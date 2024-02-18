@@ -31,9 +31,12 @@
     <a
       id="toUp"
       href="#home"
-      class="fixed bottom-8 right-5 z-30 hidden cursor-pointer items-center justify-center rounded-full bg-yellow p-3 text-xl text-white opacity-100 transition duration-300 md:p-5"
+      class="group/up fixed bottom-8 right-5 z-30 hidden cursor-pointer items-center justify-center rounded-full bg-yellow p-3 text-xl text-white opacity-100 transition duration-300 md:p-5"
     >
-      <ion-icon name="arrow-up-outline"></ion-icon>
+      <ion-icon
+        name="arrow-up-outline"
+        class="transition group-hover/up:-translate-y-1"
+      ></ion-icon>
     </a>
     <!-- fast navigation -->
 
@@ -123,9 +126,9 @@
               </li>
               <li>
                 <a
-                  href="#quotes"
+                  href="#dokumentasi"
                   class="block rounded rounded-l-full rounded-r-full bg-primary-100 px-5 py-2 text-white transition-colors hover:bg-primary-200"
-                  >Quote</a
+                  >Dokumentasi</a
                 >
               </li>
             </ul>
@@ -136,7 +139,7 @@
     <!-- navbar section end -->
 
     <!-- hero section start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-24">
       <div class="container">
         <div
           class="flex w-full flex-col-reverse flex-wrap items-center justify-between gap-10 md:flex-row md:gap-0"
@@ -169,7 +172,10 @@
             </button>
           </div>
           <div class="relative flex w-1/2 items-center justify-center px-4">
-            <canvas id="canvas" class="h-[300px] w-[300px] md:w-[500px]">
+            <canvas
+              id="canvas"
+              class="h-[350px] w-screen md:h-[300px] md:w-[500px]"
+            >
             </canvas>
             <div
               id="loading"
@@ -884,7 +890,7 @@
       <img
         src="./assets/pesawat.png"
         loading="eager"
-        class="pesawat absolute -top-1 right-0 h-20 w-auto will-change-transform md:h-auto md:max-w-full"
+        class="pesawat sm:scl absolute -top-1 right-0 w-auto scale-150 will-change-transform md:h-auto md:max-w-full md:scale-100"
         alt
       />
       <div class="container">
@@ -1617,7 +1623,7 @@
         id="data-children"
         class="z-20 -mt-20 h-96 w-full rounded-t-3xl bg-white pt-10 md:-mt-28 md:rounded-t-[126px]"
       >
-        <div class="container">
+        <div id="data-inner" class="container">
           <h1
             class="mb-10 text-center font-poppins text-3xl font-bold md:text-4xl"
           >
@@ -1831,9 +1837,46 @@
     </section>
     <!-- konsultasi end -->
 
+    <!-- video section start -->
+    <section id="dokumentasi" class="py-20 pt-20">
+      <div class="container">
+        <h1
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          class="text-center font-radioCasnada text-3xl font-semibold md:text-4xl"
+        >
+          <span class="text-yellow">Dokumentasi</span>
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
+          class="mx-auto max-w-3xl text-center text-base text-secondary-200"
+        >
+          sesi tanya jawab secara langsung terkait kenakalan remaja di sekitar,
+          yaitu berupa video dokumentasi yang mana satu orang pelajar dan satu
+          orang guru bimbingan konseling di sekolah, simak video dokomentasi
+          berikut ini!
+        </p>
+        <div class="mt-7 flex w-full justify-center">
+          <iframe
+            width="853"
+            height="480"
+            class="h-[350px] w-[640px]"
+            src="https://www.youtube.com/embed/7kCXQ0LXXpo"
+            title="Ultimate Demon Mix by Zobros"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- video section end -->
+
     <!-- team section start -->
-    <section id="team">
-      <div class="container mb-28 mt-32">
+    <section id="team" class="pb-10 pt-20">
+      <div class="container">
         <h1
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
@@ -2165,7 +2208,7 @@
     <!-- team section end -->
 
     <!-- footer section start -->
-    <footer data-aos="fade-up" class="bg-[#0D1133]">
+    <footer class="bg-[#0D1133]">
       <div class="container mx-auto w-full p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 flex flex-col justify-between md:mb-0">
@@ -2219,7 +2262,7 @@
                   <a href="#data" class="hover:underline">Data</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#about" class="hover:underline">Quote</a>
+                  <a href="#dokumentasi" class="hover:underline">Dokumentasi</a>
                 </li>
               </ul>
             </div>

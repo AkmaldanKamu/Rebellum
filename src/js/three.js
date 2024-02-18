@@ -7,6 +7,7 @@ const canvas = document.getElementById('canvas')
 const hdrTextureUrl = new URL('/texture.hdr', import.meta.url)
 
 const renderer = new THREE.WebGLRenderer({
+  antialias: true,
   canvas: canvas,
   alpha: true,
 });

@@ -24,11 +24,11 @@ tawuranBtn.addEventListener("click", () => {
   // Mengganti data saat tombol A diklik
   tawuran = [
 
-    { year: "2019", kasus: 0.4 },
-    { year: "2020", kasus: 0.65 },
-    { year: "2021", kasus: 0.22 },
-    { year: "2022", kasus: 0.14 },
-    { year: "2023", kasus: 0.16 },
+    { year: "2019", kasus: 4 },
+    { year: "2020", kasus: 65 },
+    { year: "2021", kasus: 22 },
+    { year: "2022", kasus: 14 },
+    { year: "2023", kasus: 16 },
   ];
   updateChart();
 });

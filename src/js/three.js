@@ -8,7 +8,7 @@ const hdrTextureUrl = new URL('/texture.hdr', import.meta.url)
 
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
-  alpha: true
+  alpha: true,
 });
 
 const width = canvas.clientWidth;

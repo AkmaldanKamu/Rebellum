@@ -1,0 +1,9 @@
+## Untuk Menjalankan project ini diperlukan NodeJs
+
+1. install node Js
+2. ketik command "npm run dev"
+3. aplikasi akan berjalan di "http://localhost:5173/"
+
+## atau lihat Demo langsung: 
+
+https://rebellum.vercel.app

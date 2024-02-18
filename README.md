@@ -5,7 +5,7 @@ Untuk Menjalankan project ini diperlukan NodeJs
 1. install node Js
 2. ketik command ini di terminal
 
-```bash
+```shell
     npm run dev
 ```
 

@@ -2,7 +2,6 @@ import "flowbite";
 import Typed from "typed.js";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import 'ionicons';
 import './sweeper';
 import "./chart";
 import "./three";

@@ -6,6 +6,10 @@ Untuk Menjalankan project ini diperlukan NodeJs
 2. ketik command ini di terminal
 
 ```shell
+    npm install
+```
+
+```shell
     npm run dev
 ```
 
